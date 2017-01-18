@@ -1,0 +1,2105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="https://www.aaai.org/styles/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="https://www.aaai.org/styles/layout.css" type="text/css" media="screen" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Window-target" content="_top" />
+<meta name="revisit-after" content="60 days" />
+<meta name="robots" content="all" />
+<meta name="description" content="AAAI advances the understanding of the mechanisms underlying thought and intelligent behavior and their embodiment in machines." />
+<meta name="keywords" content="AAAI AI artificial intelligence" />
+<link rel="stylesheet" type="text/css" media="print" href="https://www.aaai.org/styles/printstyles.css" />
+<script src="https://www.aaai.org/scripts/popupwindow.js" type="text/javascript"></script>
+<title>Proceedings of the Twenty-Second International Joint Conference on Artificial Intelligence</title>
+<link href="https://www.aaai.org/styles/aaai.css" rel="stylesheet" media="screen" type="text/css" />
+<style type="text/css">
+<!--
+	@import url("https://www.aaai.org/styles/layout.css") screen;
+-->
+</style>
+<style type="text/css">
+<!--
+	@import url("https://www.aaai.org/styles/print.css") print;
+-->
+</style>
+</head>
+<body class="backgrnd2">
+<div id="header" class="backgrnd1">
+<div id="logo">
+<h1></h1>
+</div>
+<!-- begin search -->
+<div id="search">
+<form action="https://www.aaai.org/search-results.php" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="016314354884912110518:gwmynp16xuu" />
+    <input type="hidden" name="cof" value="FORID:11" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="31" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>
+</div>
+</div>
+<!-- end search -->
+<div id="menu" class="backgrnd3">
+<ul class="char11">
+<li class="first"><a href="http://www.aaai.org/Organization/organization.php" accesskey="1" title="Information about AAAI, Inc., including bylaws, officers, and staff" class="link1">About Us</a></li>
+<li><a href="http://www.aaai.org/Forms/donate.php" accesskey="2" title="Giving to AAAI" class="link1">Gifts</a></li>
+<li><a href="http://aitopics.org" rel="nofollow" title="Information about AI (geared especially for students) and AI in the news" class="link1">AITopics</a></li>
+<li><a href="http://www.aaai.org/Magazine/magazine.php" accesskey="4" title="AI Magazine pages" class="link1">AI Magazine</a></li>
+<li><a href="http://www.aaai.org/Conferences/conferences.php" accesskey="5" title="AAAI, IAAI, and AIIDE conferences" class="link1">Conferences</a></li>
+<li><a href="http://www.aaai.org/Library/library.php" accesskey="6" title="Abstracts, with links to full text (for members), of AI papers in the AAAI digital library" class="link1">Library</a></li>
+<li><a href="http://www.aaai.org/Membership/membership.php" accesskey="7" title="AAAI Membership Materials" class="link1">Membership</a></li>
+<li><a href="http://www.aaai.org/Publications/publications.php" accesskey="8" title="Information for Authors and Links to AI Publications" class="link1">Publications</a></li>
+<li><a href="http://www.aaai.org/Symposia/symposia.php" accesskey="9" title="Information about AAAI's spring and fall symposia" class="link1">Symposia</a></li>
+<li><a href="https://www.aaai.org/scripts/Contact/contact.php" title="Contact Form" class="link1">Contact</a></li>
+</ul>
+</div>
+<div id="content" class="backgrnd4">
+<div id="right">
+<div id="box6">
+<h2 class="backgrnd12"><span class="text1">Proceedings of the Twenty-Second International Joint Conference on Artificial Intelligence</span></h2>
+<div class="content">
+
+<p><b>Edited by Toby Walsh</b></p>
+<p>Barcelona, Catalonia, Spain, July 16&ndash;22, 2011. Published by the International Joint Conferences on Artificial Intelligence. Copublished by the AAAI Press, Menlo Park, California. <a href="../../Press/Proceedings/ijcai11.php">This proceedings is also available in book format.</a></p>
+<hr />
+<!--
+<h3 class="left"><a href="2007/ijcai07-476.php" onclick="window.open (this.href, 'child', 'height=500px,width=300px,scrollbars'); return false">Contents</a></h3>
+<p class="left"><a href="2007/ijcai07-477.php" onclick="window.open (this.href, 'child', 'height=500px,width=300px,scrollbars'); return false">Preface / vi</a></p>
+<p class="left"><a href="2007/ijcai07-478.php" onclick="window.open (this.href, 'child', 'height=500px,width=300px,scrollbars'); return false">IJCAI-07 Conference Organization / vii</a></p>
+<p class="left"><a href="2007/ijcai07-479.php" onclick="window.open (this.href, 'child', 'height=500px,width=300px,scrollbars'); return false">IJCAI-07 Awards and Distinguished Papers / xii</a></p>
+<p class="left"><a href="2007/ijcai07-480.php" onclick="window.open (this.href, 'child', 'height=500px,width=300px,scrollbars'); return false">IJCAI-07 Keynote and Invited Speakers / xiii</a></p>
+<p class="left"><a href="2007/ijcai07-483.php" onclick="window.open (this.href, 'child', 'height=500px,width=300px,scrollbars'); return false">IJCAI Organization / xv</a></p>
+<p class="left"><a href="2007/ijcai07-484.php" onclick="window.open (this.href, 'child', 'height=500px,width=300px,scrollbars'); return false">Past IJCAI Conferences / xvii</a></p>
+<p class="left"><a href="2007/ijcai07-485.php" onclick="window.open (this.href, 'child', 'height=500px,width=300px,scrollbars'); return false">IJCAI-07 Reviewers / xviii</a></p>
+-->
+<h3>IJCAI-11 Technical Papers and Posters</h3>
+<h4>Invited Talks and Research Excellence Paper</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3353">Open Information Extraction: The Second Generation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3353/3408" class="file">PDF</a> -->
+<br /><i>Oren Etzioni, Anthony Fader, Janara Christensen, Stephen Soderland, - Mausam</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2959">Artificial Intelligence and Human Thinking</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2959/3407" class="file">PDF</a> -->
+<br /><i>Robert Anthony Kowalski</i></p>
+
+<h4>Agent-Based and Multiagent Systems</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3267">The Shapley Value as a Function of the Quota in Weighted Voting Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3267/3387" class="file">PDF</a> -->
+<br /><i>Yair Zick, Alexander Skopalik, Edith Elkind</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2939">Aggregating Dependency Graphs into Voting Agendas in Multi-Issue Elections</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2939/3327" class="file">PDF</a> -->
+<br /><i>St&eacute;phane Airiau, Ulle Endriss, Umberto Grandi, Daniele Porello, Joel Uckelman</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2890">Using Emotions to Enhance Decision-Making</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2890/3326" class="file">PDF</a> -->
+<br /><i>Dimitrios Antos, Avi Pfeffer</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3219">Hustling in Repeated Zero-Sum Games with Imperfect Execution</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3219/3328" class="file">PDF</a> -->
+<br /><i>Christopher Archibald, Yoav Shoham</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3398">Dynamics of Profit-Sharing Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3398/3329" class="file">PDF</a> -->
+<br /><i>John Augustine, Ning Chen, Edith Elkind, Angelo Fanelli, Nick Gravin, Dmitry Shiryaev</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3043">Optimal Partitions in Additively Separable Hedonic Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3043/3330" class="file">PDF</a> -->
+<br /><i>Haris Aziz, Felix Brandt, Hans Georg Seedig</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3295">Coalitional Voting Manipulation: A Game-Theoretic Perspective</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3295/3332" class="file">PDF</a> -->
+<br /><i>Yoram Bachrach, Edith Elkind, Piotr Faliszewski</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3085">Unweighted Coalitional Manipulation Under the Borda Rule Is NP-Hard</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3085/3331" class="file">PDF</a> -->
+<br /><i>Nadja Betzler, Rolf Niedermeier, Gerhard J. Woeginger</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3360">Simulating the Emergence of Grammatical Agreement in Multi-Agent Language Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3360/3333" class="file">PDF</a> -->
+<br /><i>Katrien Beuls, Sebastian H&ouml;fer</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3387">Approximately Strategy-Proof Voting</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3387/3334" class="file">PDF</a> -->
+<br /><i>Eleanor Birrell, Rafael Pass</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3095">A General Elicitation-Free Protocol for Allocating Indivisible Goods</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3095/3335" class="file">PDF</a> -->
+<br /><i>Sylvain Bouveret, J&eacute;r&ocirc;me Lang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3299">Group-Strategyproof Irresolute Social Choice Functions</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3299/3336" class="file">PDF</a> -->
+<br /><i>Felix Brandt</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3191">On the Fixed-Parameter Tractability of Composition-Consistent Tournament Solutions</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3191/3337" class="file">PDF</a> -->
+<br /><i>Felix Brandt, Markus Brill, Hans Georg Seedig</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3326">Social Distance Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3326/3338" class="file">PDF</a> -->
+<br /><i>Simina Br&acirc;nzei, Kate Larson</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3409">Modeling the Emergence and Convergence of Norms</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3409/3339" class="file">PDF</a> -->
+<br /><i>Logan Conrad Brooks, Wayne Iba, Sandip Sen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3160">Verifying Normative Behaviour via Normative Mechanism Design</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3160/3340" class="file">PDF</a> -->
+<br /><i>Nils Bulling, Mehdi Dastani</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3383">Alternating Epistemic Mu-Calculus</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3383/3341" class="file">PDF</a> -->
+<br /><i>Nils Bulling, Wojciech Jamroga</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3310">Trust Decision-Making in Multi-Agent Systems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3310/3344" class="file">PDF</a> -->
+<br /><i>Chris Burnett, Timothy J. Norman, Katia Sycara</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3183">Manipulation in Group Argument Evaluation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3183/3342" class="file">PDF</a> -->
+<br /><i>Martin Caminada, Gabriella Pigozzi, Miko&#322;aj Podlaszewski</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3057">Towards More Expressive Cake Cutting</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3057/3343" class="file">PDF</a> -->
+<br /><i>Ioannis Caragiannis, John K. Lai, Ariel D. Procaccia</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3227">Efficient Mechanisms with Risky Participation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3227/3347" class="file">PDF</a> -->
+<br /><i>Ruggiero Cavallo</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2947">Using Incentive Mechanisms for an Adaptive Regulation of Open Multi-Agent Systems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2947/3345" class="file">PDF</a> -->
+<br /><i>Roberto Centeno, Holger Billhardt</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3110">AstonCAT-Plus: An Efficient Specialist for the TAC Market Design Tournament</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3110/3346" class="file">PDF</a> -->
+<br /><i>Meng Chang, Minghua He, Xudong Luo</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3168">A Market Clearing Solution for Social Lending</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3168/3348" class="file">PDF</a> -->
+<br /><i>Ning Chen, Arpita Ghosh</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3201">Hypercubewise Preference Aggregation in Multi-Issue Domains</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3201/3350" class="file">PDF</a> -->
+<br /><i>Vincent Conitzer, J&eacute;r&ocirc;me Lang, Lirong Xia</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3365">Changing One's Mind: Erase or Rewind? Possibilistic Belief Revision with Fuzzy Argumentation Based on Trust</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3365/3349" class="file">PDF</a> -->
+<br /><i>C&eacute;lia da Costa Pereira, Andrea G. B. Tettamanzi, Serena Villata</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3180">Multi-Agent Soft Constraint Aggregation via Sequential Voting</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3180/3351" class="file">PDF</a> -->
+<br /><i>Giorgio Dalla Pozza, Maria Silvia Pini, Francesca Rossi, K. Brent Venable</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3264">Human-Agent Auction Interactions: Adaptive-Aggressive Agents Dominate</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3264/3352" class="file">PDF</a> -->
+<br /><i>Marco De Luca, Dave Cliff</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3199">Choosing Collectively Optimal Sets of Alternatives Based on the Condorcet Criterion</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3199/3353" class="file">PDF</a> -->
+<br /><i>Edith Elkind, J&eacute;r&ocirc;me Lang, Abdallah Saffidine</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3410">Action Selection via Learning Behavior Patterns in Multi-Robot Systems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3410/3400" class="file">PDF</a> -->
+<br /><i>Can Erdogan, Manuela Veloso</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3235">Assumption-Based Argumentation Dialogues</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3235/3381" class="file">PDF</a> -->
+<br /><i>Xiuyi Fan, Francesca Toni</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2943">Binary Aggregation with Integrity Constraints</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2943/3356" class="file">PDF</a> -->
+<br /><i>Umberto Grandi, Ulle Endriss</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2906">Manipulating Boolean Games Through Communication</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2906/3354" class="file">PDF</a> -->
+<br /><i>John Grant, Sarit Kraus, Michael John Wooldridge, Inon Zuckerman</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3150">On the Complexity of the Core over Coalition Structures</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3150/3377" class="file">PDF</a> -->
+<br /><i>Gianluigi Greco, Enrico Malizia, Luigi Palopoli, Francesco Scarcello</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3258">Max-Prob: An Unbiased Rational Decision Making Procedure for Multiple-Adversary Environments</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3258/3385" class="file">PDF</a> -->
+<br /><i>Anat Hashavit, Shaul Markovitch</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3175">A Dynamic Logic of Normative Systems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3175/3375" class="file">PDF</a> -->
+<br /><i>Andreas Herzig, Emiliano Lorini, Frederic Moisan, Nicolas Troquard</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3285">Considerate Equilibrium</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3285/3390" class="file">PDF</a> -->
+<br /><i>Martin Hoefer, Michal Penn, Maria Polukarov, Alexander Skopalik, Berthold V&ouml;cking</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3022">Model Checking Knowledge in Pursuit Evasion Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3022/3366" class="file">PDF</a> -->
+<br /><i>Xiaowei Huang, Patrick Maupin, Ron van der Meyden</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3268">The Complexity of Safe Manipulation under Scoring Rules</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3268/3388" class="file">PDF</a> -->
+<br /><i>Egor Ianovski, Lan Yu, Edith Elkind, Mark C. Wilson</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2927">Comparing Variants of Strategic Ability</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2927/3355" class="file">PDF</a> -->
+<br /><i>Wojciech Jamroga, Nils Bulling</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3394">Accelerating Best Response Calculation in Large Extensive Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3394/3399" class="file">PDF</a> -->
+<br /><i>Michael Johanson, Kevin Waugh, Michael Bowling, Martin Zinkevich</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3012">A Mechanism for Dynamic Ride Sharing Based on Parallel Auctions</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3012/3364" class="file">PDF</a> -->
+<br /><i>Alexander Kleiner, Bernhard Nebel, Vittorio Amos Ziparo</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3288">Security Games with Multiple Attacker Resources</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3288/3391" class="file">PDF</a> -->
+<br /><i>Dmytro Korzhyk, Vincent Conitzer, Ronald Parr</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3209">Budgeted Social Choice: From Consensus to Personalized Decision Making</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3209/3378" class="file">PDF</a> -->
+<br /><i>Tyler Lu, Craig Boutilier</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3213">Robust Approximation and Incremental Elicitation in Voting Protocols</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3213/3379" class="file">PDF</a> -->
+<br /><i>Tyler Lu, Craig Boutilier</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3132">Push and Swap: Fast Cooperative Path-Finding with Completeness Guarantees</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3132/3376" class="file">PDF</a> -->
+<br /><i>Ryan J. Luna, Kostas E. Bekris</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3101">Subsidies,  Stability,  and Restricted Cooperation in Coalitional Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3101/3373" class="file">PDF</a> -->
+<br /><i>Reshef Meir, Jeffrey S. Rosenschein, Enrico Malizia</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3259">Using Experience to Generate New Regulations</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3259/3384" class="file">PDF</a> -->
+<br /><i>Javier Morales, Maite L&oacute;pez-S&aacute;nchez, Marc Esteva</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3216">Agents,  Actions and Goals in Dynamic Environments</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3216/3380" class="file">PDF</a> -->
+<br /><i>Peter Nov&aacute;k, Wojciech Jamroga</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3405">On the Complexity of Voting Manipulation under Randomized Tie-Breaking</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3405/3396" class="file">PDF</a> -->
+<br /><i>Svetlana Obraztsova, Edith Elkind</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3084">Efficient Planning for Factored Infinite-Horizon DEC-POMDPs</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3084/3369" class="file">PDF</a> -->
+<br /><i>Joni Kristian Pajarinen, Jaakko Tapani Peltonen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3036">An Interaction-Oriented Model for Multi-Scale Simulation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3036/3361" class="file">PDF</a> -->
+<br /><i>S&eacute;bastien Picault, Philippe Mathieu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3368">Minimum Search To Establish Worst-Case Guarantees in Coalition Structure Generation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3368/3394" class="file">PDF</a> -->
+<br /><i>Talal Rahwan, Tomasz P Michalak, Nicholas R Jennings</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2965">On Combining Decisions from Multiple Expert Imitators for Performance</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2965/3360" class="file">PDF</a> -->
+<br /><i>Jonathan Rubin, Ian Watson</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3058">An Empirical Study of Seeding Manipulations and Their Prevention</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3058/3367" class="file">PDF</a> -->
+<br /><i>Tyrel Russell, Peter van Beek</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3328">Rigging Tournament Brackets for Weaker Players</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3328/3392" class="file">PDF</a> -->
+<br /><i>Isabelle Stanton, Virginia Vassilevska Williams</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3380">Learning Where You Are Going and From Whence You Came: h- and g-Cost Learning in Real-Time Heuristic Search</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3380/3816" class="file">PDF</a> -->
+<br /><i>Nathan R. Sturtevant, Vadim Bulitko</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2958">Emergence and Stability of Social Conventions in Conflict Situations</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2958/3359" class="file">PDF</a> -->
+<br /><i>Toshiharu Sugawara</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2969">Approximating Optimal Combinatorial Auctions for Complements Using Restricted Welfare Maximization</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2969/3362" class="file">PDF</a> -->
+<br /><i>Pingzhong Tang, Tuomas Sandholm</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3255">Generalizing Envy-Freeness Toward Group of Agents</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3255/3382" class="file">PDF</a> -->
+<br /><i>Taiki Todo, Runcong Li, Xuemei Hu, Takayuki Mouri, Atsushi Iwasaki, Makoto Yokoo</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3282">Concise Characteristic Function Representations in Coalitional Games Based on Agent Types</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3282/3389" class="file">PDF</a> -->
+<br /><i>Suguru Ueda, Makoto Kitaki, Atsushi Iwasaki, Makoto Yokoo</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2951">Facing Openness with Socio Cognitive Trust and Categories</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2951/3357" class="file">PDF</a> -->
+<br /><i>Matteo Venanzi, Michele Piunti, Rino Falcone, Cristiano Castelfranchi</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3370">Attack Semantics for Abstract Argumentation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3370/3395" class="file">PDF</a> -->
+<br /><i>Serena Villata, Guido Boella, Leendert van der Torre</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3087">Dynamic Sanctioning for Robust and Cost-Efficient Norm Compliance</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3087/3371" class="file">PDF</a> -->
+<br /><i>Daniel Villatoro, Giulia Andrighetto, Jordi Sabater-Mir, Rosaria Conte</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3089">Social Instruments for Robust Convention Emergence</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3089/3370" class="file">PDF</a> -->
+<br /><i>Daniel Villatoro, Jordi Sabater-Mir, Sandip Sen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3017">Reasoning About Preferences in Intelligent Agent Systems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3017/3365" class="file">PDF</a> -->
+<br /><i>Simeon Visser, John Thangarajah, James Harland</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3107">Using Gaussian Processes to Optimise Concession in Complex Negotiations against Unknown Opponents</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3107/3372" class="file">PDF</a> -->
+<br /><i>Colin Richard Williams, Valentin Robu, Enrico Harm Gerding, Nicholas Robert Jennings</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3069">Online Planning for Ad Hoc Autonomous Agent Teams</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3069/3368" class="file">PDF</a> -->
+<br /><i>Feng Wu, Shlomo Zilberstein, Xiaoping Chen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3128">A Maximum Likelihood Approach Towards Aggregating Partial Orders</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3128/3374" class="file">PDF</a> -->
+<br /><i>Lirong Xia, Vincent Conitzer</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3363">An Efficient Monte-Carlo Algorithm for Pricing Combinatorial Prediction Markets for Tournaments</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3363/3393" class="file">PDF</a> -->
+<br /><i>Lirong Xia, David M. Pennock</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2953">Improving Resource Allocation Strategy Against Human Adversaries in Security Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2953/3358" class="file">PDF</a> -->
+<br /><i>Rong Yang, Christopher Kiekintveld, Fernando Ordonez, Milind Tambe, Richard John</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3242">Continuous Time Planning for Multiagent Teams with Temporal Constraints</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3242/3383" class="file">PDF</a> -->
+<br /><i>Zhengyu Yin, Milind Tambe</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3395">Mechanism Design for Double Auctions with Temporal Constraints</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3395/3398" class="file">PDF</a> -->
+<br /><i>Dengji Zhao, Dongmo Zhang, Laurent Perrussel</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2971">Generalized Reaction Functions for Solving Complex-Task Allocation Problems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2971/3363" class="file">PDF</a> -->
+<br /><i>Xiaoming Zheng, Sven Koenig</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3266">Multi-Agent Plan Recognition with Partial Team Traces and Plan Libraries</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3266/3386" class="file">PDF</a> -->
+<br /><i>Hankz Hankui Zhuo, Lei Li</i></p>
+
+<h4>Constraints,  Satisfiability,  and Search</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3170">Tackling the Partner Units Configuration Problem</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3170/3559" class="file">PDF</a> -->
+<br /><i>Markus Aschinger, Conrad Drescher, Georg Gottlob, Peter Jeavons, Evgenij Thorstensen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3118">Depth-Driven Circuit-Level Stochastic Local Search for SAT</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3118/3563" class="file">PDF</a> -->
+<br /><i>Anton Belov, Matti J&auml;rvisalo, Zbigniew Stachniak</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2917">Tractable Set Constraints</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2917/3561" class="file">PDF</a> -->
+<br /><i>Manuel Bodirsky, Martin Hils, Alex Krimkevich</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3020">Symmetries and Lazy Clause Generation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3020/3560" class="file">PDF</a> -->
+<br /><i>Geoffrey Chu, Maria Garcia de la Banda, Chris Mears, Peter J. Stuckey</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3056">Constraint Satisfaction Problems: Convexity Makes AllDifferent Constraints Tractable</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3056/3564" class="file">PDF</a> -->
+<br /><i>Michael Fellows, Tobias Friedrich, Danny Hermelin, Nina Narodytska, Frances Rosamond</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3127">Probabilistic Satisfiability: Logic-Based Algorithms and Phase Transition</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3127/3562" class="file">PDF</a> -->
+<br /><i>Marcelo Finger, Glauber De Bona</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3109">Using Payoff-Similarity to Speed Up Search</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3109/4399" class="file">PDF</a> -->
+<br /><i>Timothy Furtak, Michael Buro</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3325">Kernels for Global Constraints</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3325/3565" class="file">PDF</a> -->
+<br /><i>Serge Gaspers, Stefan Szeider</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3248">A Uniform Approach for Generating Proofs and Strategies for both True and False QBF Formulas</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3248/3568" class="file">PDF</a> -->
+<br /><i>Alexandra Goultiaeva, Allen Van Gelder, Fahiem Bacchus</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3178">Generalizing ADOPT and BnB-ADOPT</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3178/3566" class="file">PDF</a> -->
+<br /><i>Patricia Gutierrez, Pedro Meseguer, William Yeoh</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3260">Dynamic SAT with Decision Change Costs: Formalization and Solutions</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3260/3569" class="file">PDF</a> -->
+<br /><i>Daisuke Hatano, Katsutoshi Hirayama</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3146">Minimization for Generalized Boolean Formulas</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3146/3570" class="file">PDF</a> -->
+<br /><i>Edith Hemaspaandra, Henning Schnoor</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3032">Read-Once Resolution for Unsatisfiability-Based Max-SAT Algorithms</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3032/3571" class="file">PDF</a> -->
+<br /><i>Federico Heras, Joao Marques-Silva</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3308">Real-Time Heuristic Search with Depression Avoidance</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3308/3572" class="file">PDF</a> -->
+<br /><i>Carlos Hernandez, Jorge A Baier</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3141">Evaluations of Hash Distributed A* in Optimal Sequence Alignment</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3141/3573" class="file">PDF</a> -->
+<br /><i>Yoshikazu Kobayashi, Akihiro Kishimoto, Osamu Watanabe</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3364">A Hybrid Recursive Multi-Way Number Partitioning Algorithm</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3364/3574" class="file">PDF</a> -->
+<br /><i>Richard Earl Korf</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3401">Constraint Programming on Infinite Data Streams</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3401/3575" class="file">PDF</a> -->
+<br /><i>A. Lallouet, Y. C. Law, J. H. M. Lee, C. F. K. Siu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3159">Minimum Satisfiability and Its Applications</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3159/3576" class="file">PDF</a> -->
+<br /><i>Chu-Min Li, Zhu Zhu, Felip Manya, Laurent Simon</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2874">Large Hinge Width on Sparse Random Hypergraphs</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2874/3577" class="file">PDF</a> -->
+<br /><i>Tian Liu, Xiaxiang Lin, Chaoyi Wang, Kaile Su, Ke Xu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3208">Real-Time Opponent Modelling in Trick-Taking Card Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3208/3578" class="file">PDF</a> -->
+<br /><i>Jeffrey Richard Long, Michael Buro</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3162">Exploiting Short Supports for Generalised Arc Consistency for Arbitrary Constraints</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3162/3579" class="file">PDF</a> -->
+<br /><i>Peter Nightingale, Ian Philip Gent, Chris Jefferson, Ian Miguel</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3048">The Multi-Inter-Distance Constraint</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3048/3582" class="file">PDF</a> -->
+<br /><i>Pierre Ouellet, Claude-Guy Quimper</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3320">Finite-Length Markov Processes with Constraints</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3320/3580" class="file">PDF</a> -->
+<br /><i>Francois Pachet, Pierre Roy, Gabriele Barbieri</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3093">A Generalized Arc-Consistency Algorithm for a Class of Counting Constraints</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3093/3581" class="file">PDF</a> -->
+<br /><i>Thierry Petit, Nicolas Beldiceanu, Xavier Lorca</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3358">Nested Rollout Policy Adaptation for Monte Carlo Tree Search</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3358/3583" class="file">PDF</a> -->
+<br /><i>Christopher D. Rosin</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3270">Real-Time Solving of Quantified CSPs Based on Monte-Carlo Game Tree Search</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3270/3584" class="file">PDF</a> -->
+<br /><i>Baba Satomi, Yongjoon Joe, Atsushi Iwasaki, Makoto Yokoo</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3142">The Increasing Cost Tree Search for Optimal Multi-Agent Pathfinding</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3142/3586" class="file">PDF</a> -->
+<br /><i>Guni Sharon, Roni Stern, Meir Goldenberg, Ariel Felner</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3135">Complete Algorithms for Cooperative Pathfinding Problems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3135/3585" class="file">PDF</a> -->
+<br /><i>Trevor Scott Standley, Richard Korf</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3366">Bounded Suboptimal Search: A Direct Approach Using Inadmissible Estimates</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3366/3588" class="file">PDF</a> -->
+<br /><i>Jordan Tyler Thayer, Wheeler Ruml</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2916">Rational Deployment of CSP Heuristics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2916/3587" class="file">PDF</a> -->
+<br /><i>David Tolpin, Solomon Eyal Shimony</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2950">Symmetry Breaking Via LexLeader Feasibility Checkers</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2950/3591" class="file">PDF</a> -->
+<br /><i>Justin Yip, Pascal Van Hentenryck</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3251">Heuristic Algorithms for Balanced Multi-Way Number Partitioning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3251/3589" class="file">PDF</a> -->
+<br /><i>Jilian Zhang, Kyriakos Mouratidis, HweeHwa Pang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3263">Space Defragmentation Heuristic for 2D and 3D Bin Packing Problems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3263/3590" class="file">PDF</a> -->
+<br /><i>Zhaoyi Zhang, Songshan Guo, Wenbin Zhu, Wee-Chong Oon, Andrew Lim</i></p>
+
+<h4>Knowledge Representation,  Reasoning,  and Logic</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2892">What Is an Ideal Logic for Reasoning with Inconsistency?</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2892/3489" class="file">PDF</a> -->
+<br /><i>Ofer Arieli, Arnon Avron, Anna Zamansky</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3286">Walking the Complexity Lines for Generalized Guarded Existential Rules</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3286/3492" class="file">PDF</a> -->
+<br /><i>Jean-Fran&ccedil;ois Baget, Marie-Laure Mugnier, Sebastian Rudolph, Micha&euml;l Thomazo</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3080">Query Reasoning on Trees with Types,  Interleaving,  and Counting</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3080/3490" class="file">PDF</a> -->
+<br /><i>Everardo Barcenas, Pierre Geneves, Nabil Layaida, Alan Schmitt</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3385">First-Order Extension of the FLP Stable Model Semantics via Modified Circumscription</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3385/3493" class="file">PDF</a> -->
+<br /><i>Michael Bartholomew, Joohyung Lee, Yunsong Meng</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3034">A Theory of Meta-Diagnosis: Reasoning About Diagnostic Systems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3034/3491" class="file">PDF</a> -->
+<br /><i>Nuno Belard, Yannick Pencol&eacute;, Michel Combacau</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3050">A Computationally-Grounded Semantics for Artifact-Centric Systems and Abstraction Results</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3050/3496" class="file">PDF</a> -->
+<br /><i>Francesco Belardinelli, Alessio Lomuscio, Fabio Patrizi</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3171">On Progression and Query Evaluation in First-Order Knowledge Bases with Function Symbols</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3171/3494" class="file">PDF</a> -->
+<br /><i>Vaishak Belle, Gerhard Lakemeyer</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3173">Interval-Based Possibilistic Logic</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3173/3497" class="file">PDF</a> -->
+<br /><i>Salem Benferhat, Julien Hu&eacute;, Sylvain Lagrue, Julien Rossit</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3187">RCC8 Is Polynomial on Networks of Bounded Treewidth</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3187/3495" class="file">PDF</a> -->
+<br /><i>Manuel Bodirsky, Stefan W&ouml;lfl</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3112">On the Complexity of EL with Defeasible Inclusions</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3112/3504" class="file">PDF</a> -->
+<br /><i>Piero A. Bonatti, Marco Faella, Luigi Sauro</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2948">Description Logics over Lattices with Multi-valued Ontologies</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2948/3498" class="file">PDF</a> -->
+<br /><i>Stefan Borgwardt, Rafael Pe&ntilde;aloza</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3271">Finite-Valued Lukasiewicz Modal Logic Is PSPACE-Complete</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3271/3499" class="file">PDF</a> -->
+<br /><i>F&eacute;lix Bou, Marco Cerami, Francesc Esteva</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2823">Relating the Semantics of Abstract Dialectical Frameworks and Standard AFs</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2823/3503" class="file">PDF</a> -->
+<br /><i>Gerd Brewka, Paul Edward Dunne, Stefan Woltran</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3086">Managed Multi-Context Systems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3086/3500" class="file">PDF</a> -->
+<br /><i>Gerhard Brewka, Thomas Eiter, Michael Fink, Antonius Weinzierl</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3313">Modeling Attempt and Action Failure in Probabilistic Stit Logic</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3313/3501" class="file">PDF</a> -->
+<br /><i>Jan Broersen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3391">A Practical Automata-Based Technique for Reasoning in Expressive Description Logics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3391/3502" class="file">PDF</a> -->
+<br /><i>Diego Calvanese, Domenico Carbotta, Magdalena Ortiz</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3372">Containment of Regular Path Queries under Description Logic  Constraints</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3372/3505" class="file">PDF</a> -->
+<br /><i>Diego Calvanese, Magdalena Ortiz, Mantas Simkus</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2924">Defeasible Inheritance-Based Description Logics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2924/3506" class="file">PDF</a> -->
+<br /><i>Umberto Straccia, Giovanni Casini</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3341">SDD: A New Canonical Representation of Propositional Knowledge Bases</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3341/3512" class="file">PDF</a> -->
+<br /><i>Adnan Darwiche</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3076">Efficient Reasoning in Proper Knowledge Bases with Unknown Individuals</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3076/3507" class="file">PDF</a> -->
+<br /><i>Giuseppe De Giacomo, Yves Lesperance, Hector J. Levesque</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3218">Revising by an Inconsistent Set of Formulas</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3218/3508" class="file">PDF</a> -->
+<br /><i>James Delgrande</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3314">Revising Horn Theories</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3314/3510" class="file">PDF</a> -->
+<br /><i>James P. Delgrande, Pavlos Peppas</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3273">Expressiveness of the Interval Logics of Allen's Relations on the Class of all Linear Orders: Complete Classification</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3273/3509" class="file">PDF</a> -->
+<br /><i>Dario Della Monica, Valentin Goranko, Angelo Montanari, Guido Sciavicco</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2903">Parametric Properties of Ideal Semantics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2903/3511" class="file">PDF</a> -->
+<br /><i>Wolfgang Dvorak, Paul Edward Dunne, Stefan Woltran</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2972">Tangled Modal Logic for Spatial Reasoning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2972/3513" class="file">PDF</a> -->
+<br /><i>David Fern&aacute;ndez Duque</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3311">Backdoors to Tractable Answer-Set Programming</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3311/3514" class="file">PDF</a> -->
+<br /><i>Johannes Klaus Fichte, Stefan Szeider</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3067">Refutation in Dummett Logic Using a Sign to Express the Truth at the Next Possible World</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3067/3517" class="file">PDF</a> -->
+<br /><i>Guido Fiorino</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2920">Fixpoints in Temporal Description Logics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2920/3515" class="file">PDF</a> -->
+<br /><i>Enrico Franconi, David Toman</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2915">Succinctness of Epistemic Languages</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2915/3516" class="file">PDF</a> -->
+<br /><i>Tim French, Wiebe van der Hoek, Petar Iliev, Barteld Kooi</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2768">Repairing Incorrect Knowledge with Model Formulation and Metareasoning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2768/3518" class="file">PDF</a> -->
+<br /><i>Scott Friedman, Kenneth Forbus</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3177">Reasoning About Typicality in Low Complexity DLs: the Logics EL&perp;Tmin and DL-LitecTmin</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3177/3519" class="file">PDF</a> -->
+<br /><i>Laura Giordano, Valentina Gliozzi, Nicola Olivetti, GianLuca Pozzato</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3103">Belief Management for High-Level Robot Programs</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3103/3520" class="file">PDF</a> -->
+<br /><i>Stephan Gspandl, Ingo Pill, Michael Reip, Gerald Steinbauer, Alexander Ferrein</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2956">Multidimensional Mereotopology with Betweenness</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2956/3524" class="file">PDF</a> -->
+<br /><i>Torsten Hahmann, Michael Gruninger</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3176">Generalising the Interaction Rules in Probabilistic Logic</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3176/3521" class="file">PDF</a> -->
+<br /><i>Arjen Hommersom, Peter J. F. Lucas</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3053">Generalized Planning: Synthesizing Plans that Work for Multiple Environments</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3053/3522" class="file">PDF</a> -->
+<br /><i>Yuxiao Hu, Giuseppe De Giacomo</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3280">Logic Programming for Boolean Networks</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3280/3523" class="file">PDF</a> -->
+<br /><i>Katsumi Inoue</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3092">Discrete-Time Temporal Reasoning with Horn DLRs</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3092/3525" class="file">PDF</a> -->
+<br /><i>Peter Jonsson, Tomas L&ouml;&ouml;w</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3256">A Constructive Approach to Independent and Evidence Retaining Belief Revision by General Information Sets</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3256/3530" class="file">PDF</a> -->
+<br /><i>Gabriele Kern-Isberner, Patrick Kruempelmann</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2923">A Logic for Causal Inference in Time Series with Discrete and Continuous Variables</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2923/3526" class="file">PDF</a> -->
+<br /><i>Samantha Kleinberg</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3340">Belief Base Rationalization for Propositional Merging</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3340/3527" class="file">PDF</a> -->
+<br /><i>S&eacute;bastien Konieczny, Pierre Marquis, Nicolas Schwind</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3278">On the Decidability of Connectedness Constraints in 2D and 3D Euclidean Spaces</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3278/3531" class="file">PDF</a> -->
+<br /><i>Roman Kontchakov, Yavor Nenov, Ian Pratt-Hartmann, Michael Zakharyaschev</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3210">Extending Decidable Existential Rules by Joining Acyclicity and Guardedness</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3210/3528" class="file">PDF</a> -->
+<br /><i>Markus Kr&ouml;tzsch, Sebastian Rudolph</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3037">Context-Sensitive Diagnosis of Discrete-Event Systems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3037/3529" class="file">PDF</a> -->
+<br /><i>Gianfranco Lamperti, Marina Zanella</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3406">On the Progression of Knowledge in the Situation Calculus</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3406/3532" class="file">PDF</a> -->
+<br /><i>Yongmei Liu, Ximing Wen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3277">Description Logic TBoxes: Model-Theoretic Characterizations and Rewritability</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3277/3533" class="file">PDF</a> -->
+<br /><i>Carsten Lutz, Robert Piro, Frank Wolter</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3081">Foundations for Uniform Interpolation and Forgetting in Expressive Description Logics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3081/3540" class="file">PDF</a> -->
+<br /><i>Carsten Lutz, Frank Wolter</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3026">Existential Closures for Knowledge Compilation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3026/3534" class="file">PDF</a> -->
+<br /><i>Pierre Marquis</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3192">Lost in Translation: Language Independence in Propositional Logic &mdash; Application to Belief Revision and Belief Merging</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3192/3535" class="file">PDF</a> -->
+<br /><i>Pierre Marquis, Nicolas Schwind</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3265">Reasoning about Fuzzy Belief and Common Belief: With Emphasis on Incomparable Beliefs</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3265/3536" class="file">PDF</a> -->
+<br /><i>Yoshihiro Maruyama</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3361">Causal Learnability</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3361/3539" class="file">PDF</a> -->
+<br /><i>Loizos Michael</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3179">Revisiting Preferences and Argumentation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3179/3537" class="file">PDF</a> -->
+<br /><i>Sanjay Modgil, Henry Prakken</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2998">Reasoning-Supported Interactive Revision of Knowledge Bases</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2998/3538" class="file">PDF</a> -->
+<br /><i>Nadeschda Nikitina, Sebastian Rudolph, Birte Glimm</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3294">Augmenting Tractable Fragments of Abstract Argumentation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3294/3541" class="file">PDF</a> -->
+<br /><i>Sebastian Ordyniak, Stefan Szeider</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3309">Query Answering in the Horn Fragments of the Description Logics SHOIQ and SROIQ</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3309/3542" class="file">PDF</a> -->
+<br /><i>Magdalena Ortiz, Sebastian Rudolph, Mantas Simkus</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3198">An Approach to Minimal Belief Via Objective Belief</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3198/3543" class="file">PDF</a> -->
+<br /><i>David Pearce, Levan Uridia</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3070">An Assertion Retrieval Algebra for Object Queries over Knowledge Bases</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3070/3546" class="file">PDF</a> -->
+<br /><i>Jeffrey Pound, David Toman, Grant Weddell, Jiewen Wu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3373">On the Complexity of Dealing with Inconsistency in Description Logic Ontologies</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3373/3544" class="file">PDF</a> -->
+<br /><i>Riccardo Rosati</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3147">Dishonest Reasoning by Abduction</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3147/3547" class="file">PDF</a> -->
+<br /><i>Chiaki Sakama</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3144">A Logical Formulation for Negotiation Among Dishonest Agents</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3144/3545" class="file">PDF</a> -->
+<br /><i>Chiaki Sakama, Son Cao Tran, Enrico Pontelli</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3153">Description Logics and Fuzzy Probability</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3153/3551" class="file">PDF</a> -->
+<br /><i>Lutz Schr&ouml;der, Dirk Pattinson</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2824">Well-Supported Semantics for Description Logic Programs</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2824/3548" class="file">PDF</a> -->
+<br /><i>Yi-Dong Shen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2992">Computing Minimum-Cardinality Diagnoses by Model Relaxation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2992/3550" class="file">PDF</a> -->
+<br /><i>Sajjad Ahmed Siddiqi</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3205">Consequence-Based Reasoning beyond Horn Ontologies</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3205/3552" class="file">PDF</a> -->
+<br /><i>Franti&scaron;ek Siman&#269;&iacute;k, Yevgeny Kazakov, Ian Horrocks</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3224">Beth Definability in Expressive Description Logics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3224/3553" class="file">PDF</a> -->
+<br /><i>Balder ten Cate, Enrico Franconi, &#304;nan&ccedil; Seylan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3077">The General Game Playing Description Language Is Universal</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3077/3557" class="file">PDF</a> -->
+<br /><i>Michael Thielscher</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2954">Relating Carneades with Abstract Argumentation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2954/3554" class="file">PDF</a> -->
+<br /><i>Bas Martijn van Gijzel, Henry Prakken</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3030">On Qualitative Route Descriptions: Representation and Computational Complexity</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3030/3558" class="file">PDF</a> -->
+<br /><i>Matthias Westphal, Stefan W&ouml;lfl, Bernhard Nebel, Jochen Renz</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3388">Translating First-Order Theories into Logic Programs</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3388/3555" class="file">PDF</a> -->
+<br /><i>Heng Zhang, Yan Zhang, Mingsheng Ying, Yi Zhou</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3381">Transitively Relational Partial Meet Horn Contraction</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3381/3556" class="file">PDF</a> -->
+<br /><i>Zhiqiang Zhuang, Maurice Pagnucco</i></p>
+
+<h4>Machine Learning</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3116">Discerning Linkage-Based Algorithms Among Hierarchical Clustering Methods</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3116/3410" class="file">PDF</a> -->
+<br /><i>Margareta Ackerman, Shai Ben-David</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3223">A Competitive Strategy for Function Approximation in Q-Learning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3223/3411" class="file">PDF</a> -->
+<br /><i>Alejandro Gabriel Agostini, Enric Celaya</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3337">Multi-Evidence Lifted Message Passing,  with Application to PageRank and the Kalman Filter</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3337/3412" class="file">PDF</a> -->
+<br /><i>Babak Ahmadi, Kristian Kersting, Scott Sanner</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3324">An Efficient Framework for Constructing Generalized Locally-Induced Text  Metrics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3324/3413" class="file">PDF</a> -->
+<br /><i>Saeed Amizadeh, Shuguang Wang, Milos Hauskrecht</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3047">Semi-Supervised Learning from a Translation Model Between Data Distributions</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3047/3415" class="file">PDF</a> -->
+<br /><i>Henry Anaya-S&aacute;nchez, Jos&eacute; Mart&iacute;nez-Sotoca, Adolfo Mart&iacute;nez-Us&oacute;</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3054">A Framework for Incorporating General Domain Knowledge into Latent Dirichlet Allocation Using First-Order Logic</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3054/3414" class="file">PDF</a> -->
+<br /><i>David Andrzejewski, Xiaojin Zhu, Mark Craven, Benjamin Recht</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3115">Improving Performance of Topic Models by Variable Grouping</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3115/3416" class="file">PDF</a> -->
+<br /><i>Evgeniy Bart</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2872">Learning a Distance Metric by Empirical Loss Minimization</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2872/3418" class="file">PDF</a> -->
+<br /><i>Wei Bian, Dacheng Tao</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2984">A Hidden Markov Model Variant for Sequence Classification</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2984/3417" class="file">PDF</a> -->
+<br /><i>Sam Blasiak, Huzefa Rangwala</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2929">Approximation-Guided Evolutionary Multi-Objective Optimization</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2929/3419" class="file">PDF</a> -->
+<br /><i>Karl Bringmann, Tobias Friedrich, Frank Neumann, Markus Wagner</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3397">Distance Metric Learning under Covariate Shift</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3397/3422" class="file">PDF</a> -->
+<br /><i>Bin Cao, Xiaochuan Ni, Jian-Tao Sun, Gang Wang, Qiang Yang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3186">Using Cases as Heuristics in Reinforcement Learning: A Transfer Learning Application</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3186/3420" class="file">PDF</a> -->
+<br /><i>Luiz A. Celiberto Jr., Jackson P. Matsuura, Ramon Lopez de Mantaras, Reinaldo A. C. Bianchi</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3014">Increasing the Scalability of the Fitting of Generalised Block Models for Social Networks</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3014/3421" class="file">PDF</a> -->
+<br /><i>Jeffrey Chan, Samantha Lam, Conor Hayes</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3374">Concept Labeling: Building Text Classifiers with Minimal Supervision</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3374/3424" class="file">PDF</a> -->
+<br /><i>Vijil Chenthamarakshan, Prem Melville, Vikas Sindhwani, Richard D Lawrence</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3139">Unsupervised Learning of Patterns in Data Streams Using Compression and Edit Distance</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3139/3423" class="file">PDF</a> -->
+<br /><i>Sook-Ling Chua, Stephen Marsland, Hans W. Guesgen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3098">Flexible,  High Performance Convolutional Neural Networks for Image Classification</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3098/3425" class="file">PDF</a> -->
+<br /><i>Dan Claudiu Ciresan, Ueli Meier, Jonathan Masci, Luca Maria Gambardella, J&uuml;rgen Schmidhuber</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3307">Automatic State Abstraction from Demonstration</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3307/3428" class="file">PDF</a> -->
+<br /><i>Luis Carlos Cobo, Peng Zang, Charles Lee Isbell Jr., Andrea Lockerd Thomaz</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3356">Generative Structure Learning for Markov Logic Networks Based on Graph of Predicates</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3356/3426" class="file">PDF</a> -->
+<br /><i>Quang-Thang Dinh, Matthieu Exbrayat, Christel Vrain</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3061">Learning Decision Rules from Data Streams</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3061/3427" class="file">PDF</a> -->
+<br /><i>Jo&atilde;o Gama, Petr Kosina</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2978">Constituent Grammatical Evolution</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2978/3430" class="file">PDF</a> -->
+<br /><i>Loukas Georgiou, William J. Teahan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3090">Continuous Correlated Beta Processes</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3090/3432" class="file">PDF</a> -->
+<br /><i>Robby Goetschalckx, Pascal Poupart, Jesse Hoey</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2982">A Fast Dual Projected Newton Method for L1-Regularized Least Squares</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2982/3429" class="file">PDF</a> -->
+<br /><i>Pinghua Gong, Changshui Zhang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3197">Kernel-Based Selective Ensemble Learning for Streams of Trees</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3197/3431" class="file">PDF</a> -->
+<br /><i>Valerio Grossi, Alessandro Sperduti</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3004">On Trivial Solution and Scale Transfer Problems in Graph Regularized NMF</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3004/3435" class="file">PDF</a> -->
+<br /><i>Quanquan Gu, Chris Ding, Jiawei Han</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2910">Joint Feature Selection and Subspace Learning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2910/3433" class="file">PDF</a> -->
+<br /><i>Quanquan Gu, Zhenhui Li, Jiawei Han</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3011">Multi-Label Classification Using Conditional Dependency Networks</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3011/3434" class="file">PDF</a> -->
+<br /><i>Yuhong Guo, Suicheng Gu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2991">Extracting Temporal Patterns from Interval-Based Sequences</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2991/3436" class="file">PDF</a> -->
+<br /><i>Thomas Guyet, Ren&eacute; Quiniou</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3418">Fast Approximate Nearest-Neighbor Search with k-Nearest Neighbor Graph</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3418/3438" class="file">PDF</a> -->
+<br /><i>Kiana Hajebi, Yasin Abbasi-Yadkori, Hossein Shahbazi, Hong Zhang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3083">Gaussianity Measures for Detecting the Direction of Causal Time Series</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3083/3437" class="file">PDF</a> -->
+<br /><i>Jos&eacute; Miguel Hern&aacute;ndez-Lobato, Pablo Morales-Mombiela, Alberto Su&aacute;rez</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3028">Feature Selection Via Joint Embedding Learning and Sparse Regression</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3028/3439" class="file">PDF</a> -->
+<br /><i>Chenping Hou, Feiping Nie, Dongyun Yi, Yi Wu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3156">Heuristic Rule-Based Regression Via Dynamic Reduction to Classification</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3156/3440" class="file">PDF</a> -->
+<br /><i>Frederik Janssen, Johannes F&uuml;rnkranz</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3244">Adaptation of a Mixture of Multivariate Bernoulli Distributions</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3244/3441" class="file">PDF</a> -->
+<br /><i>Ankur Kamthe, Miguel Angel Carreira-Perpinan, Alberto E. Cerpa</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3151">Revisiting Numerical Pattern Mining with Formal Concept Analysis</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3151/3444" class="file">PDF</a> -->
+<br /><i>Mehdi Kaytoue, Sergei O. Kuznetsov, Amedeo Napoli</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3312">Activity Recognition with Finite State Machines</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3312/3487" class="file">PDF</a> -->
+<br /><i>Wesley Kerr, Anh Tran, Paul Cohen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3261">Incremental Slow Feature Analysis</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3261/3443" class="file">PDF</a> -->
+<br /><i>Varun Raj Kompella, Matthew Luciw, Juergen Schmidhuber</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3350">Learning Hash Functions for Cross-View Similarity Search</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3350/3446" class="file">PDF</a> -->
+<br /><i>Shaishav Kumar, Raghavendra Udupa</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3074">Modular Community Detection in Networks</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3074/3445" class="file">PDF</a> -->
+<br /><i>Wenye Li, Dale Schuurmans</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2905">Probit Classifiers with a Generalized Gaussian Scale Mixture Prior</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2905/3448" class="file">PDF</a> -->
+<br /><i>Guoqing Liu, Jianxin Wu, Suiping Zhou</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2936">Locality-Constrained Concept Factorization</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2936/3447" class="file">PDF</a> -->
+<br /><i>Haifeng Liu, Zheng Yang, Zhaohui Wu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3355">Cluster Indicator Decomposition for Efficient Matrix Factorization</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3355/3449" class="file">PDF</a> -->
+<br /><i>Dijun Luo, Chris Ding, Heng Huang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3352">Ball Ranking Machines for Content-Based Multimedia Retrieval</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3352/3450" class="file">PDF</a> -->
+<br /><i>Dijun Luo, Heng Huang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3102">Combining Supervised and Unsupervised Models Via Unconstrained Probabilistic Embedding</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3102/3452" class="file">PDF</a> -->
+<br /><i>Xudong Ma, Ping Luo, Fuzhen Zhuang, Qing He, Zhongzhi Shi, Zhiyong Shen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3013">Agent-Oriented Incremental Team and Activity Recognition</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3013/3451" class="file">PDF</a> -->
+<br /><i>Daniele Masato, Timothy J. Norman, Wamberto W. Vasconcelos, Katia Sycara</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3252">Multi-Kernel Gaussian Processes</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3252/3455" class="file">PDF</a> -->
+<br /><i>Arman Melkumyan, Fabio Ramos</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3189">Imitation Learning in Relational Domains: A Functional-Gradient Boosting Approach</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3189/3453" class="file">PDF</a> -->
+<br /><i>Sriraam Natarajan, Saket Joshi, Prasad Tadepalli, Kristian Kersting, Jude Shavlik</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2989">Positive Unlabeled Learning for Time Series Classification</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2989/3456" class="file">PDF</a> -->
+<br /><i>Minh Nhut Nguyen, Xiao-Li Li, See-Kiong Ng</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3079">Distribution-Aware Online Classifiers</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3079/3454" class="file">PDF</a> -->
+<br /><i>Tam T. Nguyen, Kuiyu Chang, Cheung Siu Hui</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3412">Robust Principal Component Analysis with Non-Greedy &#8467;1-Norm Maximization</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3412/3457" class="file">PDF</a> -->
+<br /><i>Feiping Nie, Heng Huang, Chris Ding, Dijun Luo, Hua Wang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3202">Biclustering-Driven Ensemble of Bayesian Belief Network Classifiers for Underdetermined Problems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3202/3459" class="file">PDF</a> -->
+<br /><i>Tatdow Pansombut, William Hendrix, Zekai J. Gao, Brent E. Harrison, Nagiza F. Samatova</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3346">Strategy Learning for Autonomous Agents in Smart Grid Markets</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3346/3458" class="file">PDF</a> -->
+<br /><i>Prashant P. Reddy, Manuela M. Veloso</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3407">Q-Error as a Selection Mechanism in Modular Reinforcement-Learning Systems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3407/3464" class="file">PDF</a> -->
+<br /><i>Mark B. Ring, Tom Schaul</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3245">Domain Adaptation with Ensemble of Feature Groups</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3245/3460" class="file">PDF</a> -->
+<br /><i>Rajhans Yih Samdani, Wen-tau Yih</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3338">Discovering Deformable Motifs in Continuous Time Series Data</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3338/3461" class="file">PDF</a> -->
+<br /><i>Suchi Saria, Andrew Duchi, Daphne Koller</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2934">A General MCMC Method for Bayesian Inference in Logic-Based Probabilistic Modeling</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2934/3462" class="file">PDF</a> -->
+<br /><i>Taisuke Sato</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2931">Classification of Emerging Extreme Event Tracks in Multivariate Spatio-Temporal Physical Systems Using Dynamic Network Structures: Application to Hurricane Track Prediction</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2931/3463" class="file">PDF</a> -->
+<br /><i>Huseyin Sencan, Zhengzhang Chen, William Hendrix, Tatdow Pansombut, Frederick Semazzi, Alok Choudhary, Vipin Kumar, Anatoli V. Melechko, Nagiza F. Samatova</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3375">Active Surveying: A Probabilistic Approach for Identifying Key Opinion Leaders</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3375/3465" class="file">PDF</a> -->
+<br /><i>Hossam Sharara, Lise Getoor, Myra Norton</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3126">Consistency Measures for Feature Selection: A Formal Definition,  Relative Sensitivity Comparison and a Fast Algorithm</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3126/3466" class="file">PDF</a> -->
+<br /><i>Kilho Shin, Danny Fernandes, Seiya Miyazaki</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3105">Active Online Classification Via Information Maximization</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3105/3467" class="file">PDF</a> -->
+<br /><i>Noam Slonim, Elad Yom-Tov, Koby Crammer</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3108">Angular Decomposition</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3108/3468" class="file">PDF</a> -->
+<br /><i>Dengdi Sun, Chris H.Q. Ding, Bin Luo, Jin Tang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3229">Fast Anomaly Detection for Streaming Data</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3229/3469" class="file">PDF</a> -->
+<br /><i>Swee Chuan Tan, Kai Ming Ting, Tony Fei Liu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3002">Utility-Based Fraud Detection</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3002/3470" class="file">PDF</a> -->
+<br /><i>Luis Torgo, Elsa Lopes</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3362">On the Utility of Curricula in Unsupervised Learning of Probabilistic Grammars</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3362/3473" class="file">PDF</a> -->
+<br /><i>Kewei Tu, Vasant Honavar</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3301">Learning Driving Behavior by Timed Syntactic Pattern Recognition</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3301/3471" class="file">PDF</a> -->
+<br /><i>Sicco Verwer, Mathijs de Weerdt, Cees Witteveen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3190">Bi-Weighting Domain Adaptation for Cross-Language Text Classification</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3190/3472" class="file">PDF</a> -->
+<br /><i>Chang Wan, Rong Pan, Jiefei Li</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3207">Heterogeneous Domain Adaptation using Manifold Alignment</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3207/3474" class="file">PDF</a> -->
+<br /><i>Chang Wang, Sridhar Mahadevan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3123">Jointly Learning Data-Dependent Label and Locality-Preserving Projections</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3123/3475" class="file">PDF</a> -->
+<br /><i>Chang Wang, Sridhar Mahadevan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2909">Fast Nonnegative Matrix Tri-Factorization for Large-Scale Data Co-Clustering</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2909/3477" class="file">PDF</a> -->
+<br /><i>Hua Wang, Feiping Nie, Heng Huang, Fillia Makedon</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3143">Local and Structural Consistency for Multi-Manifold Clustering</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3143/3476" class="file">PDF</a> -->
+<br /><i>Yong Wang, Yuan Jiang, Yi Wu, Zhi-Hua Zhou</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3306">Bayesian Policy Search with Policy Priors</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3306/3478" class="file">PDF</a> -->
+<br /><i>David Wingate, Noah D. Goodman, Daniel M. Roy, Leslie P. Kaelbling, Joshua B. Tenenbaum</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2968">Learning to Rank Under Multiple Annotators</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2968/3479" class="file">PDF</a> -->
+<br /><i>Ou Wu, Weiming Hu, Jun Gao</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3421">Similarity-Based Approach for Positive and Unlabelled Learning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3421/3480" class="file">PDF</a> -->
+<br /><i>Yanshan Xiao, Bo Liu, Jie Yin, Longbing Cao, Chengqi Zhang, Zhifeng Hao</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2928">Dealing with Concept Drift and Class Imbalance in Multi-Label Stream Classification</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2928/3483" class="file">PDF</a> -->
+<br /><i>Eleftherios Spyromitros-Xioufis, Myra Spiliopoulou, Grigorios Tsoumakas, Ioannis Vlahavas</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3136">L2, 1-Norm Regularized Discriminative Feature Selection for Unsupervised</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3136/3481" class="file">PDF</a> -->
+<br /><i>Yi Yang, Heng Tao Shen, Zhigang Ma, Zi Huang, Xiaofang Zhou</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2967">Matrix Co-Factorization on Compressed Sensing</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2967/3484" class="file">PDF</a> -->
+<br /><i>Seungjin Choi, Jiho Yoo</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2962">Diversity Regularized Machine</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2962/3482" class="file">PDF</a> -->
+<br /><i>Yang Yu, Yu-Feng Li, Zhi-Hua Zhou</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2964">LIFT: Multi-Label Learning with Label-Specific Features</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2964/3488" class="file">PDF</a> -->
+<br /><i>Min-Ling Zhang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3134">Multi-Kernel Multi-Label Learning with Max-Margin Concept Network</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3134/3485" class="file">PDF</a> -->
+<br /><i>Wei Zhang, Xiangyang Xue, Jianping Fan, Xiaojing Huang, Bin Wu, Mingjie Liu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3104">Pattern Field Classification with Style Normalized Transformation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3104/3486" class="file">PDF</a> -->
+<br /><i>Xu-Yao Zhang, Kaizhu Huang, Cheng-Lin Liu</i></p>
+
+<h4>Multidisciplinary Topics And Applications</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3238">Finding "Unexplained" Activities in Video</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3238/3761" class="file">PDF</a> -->
+<br /><i>Massimiliano Albanese, Cristian Molinaro, Fabio Persia, Antonio Picariello, V.S. Subrahmanian</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3220">Explaining Genetic Knock-Out Effects Using Cost-Based Abduction</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3220/3762" class="file">PDF</a> -->
+<br /><i>Emad Abdel-Thalooth Andrews, Anthony Bonner</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3376">Just an Artifact: Why Machines are Perceived as Moral Agents</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3376/3774" class="file">PDF</a> -->
+<br /><i>Joanna J. Bryson, Philip P. Kime</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3400">A Hierarchical Architecture for Adaptive Brain-Computer Interfacing</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3400/3763" class="file">PDF</a> -->
+<br /><i>Mike Chung, Willy Cheung, Reinhold Scherer, Rajesh P. N. Rao</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3303">A Neural-Symbolic Cognitive Agent for Online Learning and Reasoning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3303/3764" class="file">PDF</a> -->
+<br /><i>H. Leo H. de Penning, Artur S. d&#039;Avila Garcez, Luis C. Lamb, John-Jules C. Meyer</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3018">Verifying Fault Tolerance and  Self-Diagnosability of an Autonomous Underwater Vehicle</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3018/3765" class="file">PDF</a> -->
+<br /><i>Jonathan Ezekiel, Alessio Lomuscio, Levente Molnar, Sandor Veres, Miles Pebody</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3347">OCS-14: You Can Get Occluded in Fourteen Ways</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3347/3766" class="file">PDF</a> -->
+<br /><i>Prithwijit Guha, Amitabha Mukerjee, K. S. Venkatesh</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3019">Effective and Efficient Microprocessor Design Space Exploration Using Unlabeled Design Configurations</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3019/3767" class="file">PDF</a> -->
+<br /><i>Qi Guo, Tianshi Chen, Yunji Chen, Zhi-Hua Zhou, Weiwu Hu, Zhiwei Xu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2949">Visual Task Inference Using Hidden Markov Models</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2949/3768" class="file">PDF</a> -->
+<br /><i>Amin Haji Abolhassani, James J. Clark</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2900">The Role of Intention Recognition in the Evolution of Cooperative Behavior</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2900/3769" class="file">PDF</a> -->
+<br /><i>The Anh Han, Luis Moniz Pereira, Francisco C. Santos</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2921">Multi-Select Faceted Navigation Based on Minimum Description Length Principle</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2921/3770" class="file">PDF</a> -->
+<br /><i>Chao He, Xueqi Cheng, Jiafeng Guo, Huawei Shen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3384">Modeling Situation Awareness in Human-Like Agents Using Mental Models</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3384/3771" class="file">PDF</a> -->
+<br /><i>Mark Hoogendoorn, Rianne Maaike van Lambalgen, Jan Treur</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3188">Generalized Latent Factor Models for Social Network Analysis</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3188/3775" class="file">PDF</a> -->
+<br /><i>Wu-Jun Li, Dit-Yan Yeung, Zhihua Zhang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3041">Modeling Multivariate Spatio-Temporal Remote Sensing Data with Large Gaps</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3041/3773" class="file">PDF</a> -->
+<br /><i>Qiang Lou, Zoran Obradovic</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3212">On the Role of Domain Knowledge in Analogy-Based Story Generation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3212/3776" class="file">PDF</a> -->
+<br /><i>Santiago Ontanon, Jichen Zhu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3253">Using Multiple Models to Understand Data</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3253/3780" class="file">PDF</a> -->
+<br /><i>Kayur Patel, Steven M. Drucker, James Fogarty, Ashish Kapoor, Desney S. Tan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3016">Feature Learning for Activity Recognition in Ubiquitous Computing</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3016/3778" class="file">PDF</a> -->
+<br /><i>Thomas Ploetz, Nils Y. Hammerla, Patrick L. Olivier</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3129">A Cognitive Agent Model Displaying and Regulating Different Social Response Patterns</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3129/3777" class="file">PDF</a> -->
+<br /><i>Jan Treur</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3130">A Cognitive Agent Model Incorporating Prior and Retrospective Ownership States for Actions</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3130/3781" class="file">PDF</a> -->
+<br /><i>Jan Treur</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3211">Active Graph Reachability Reduction for Network Security and Software Engineering</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3211/3779" class="file">PDF</a> -->
+<br /><i>Alice X. Zheng, John Dunagan, Ashish Kapoor</i></p>
+
+<h4>Natural-Language Processing</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3414">Learning Cause Identifiers from Annotator Rationales</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3414/3734" class="file">PDF</a> -->
+<br /><i>Muhammad Arshad Ul Abedin, Vincent Ng, Latifur Rahman Khan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3239">Learning Bilingual Lexicons Using the Visual Similarity of Labeled Web Images</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3239/3743" class="file">PDF</a> -->
+<br /><i>Shane Bergsma, Benjamin Van Durme</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2994">Semantic Relationship Discovery with Wikipedia Structure</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2994/3735" class="file">PDF</a> -->
+<br /><i>Fan Bu, Yu Hao, Xiaoyan Zhu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3283">Short Text Classification Improved by Learning Multi-Granularity Topics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3283/3736" class="file">PDF</a> -->
+<br /><i>Mengen Chen, Xiaoming Jin, Dou Shen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3386">Online Latent Structure Training for Language Acquisition</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3386/3737" class="file">PDF</a> -->
+<br /><i>Michael James Connor, Cynthia Fisher, Dan Roth</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3040">Predicting Globally-Coherent Temporal Structures from Texts Via Endpoint Inference and Graph Decomposition</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3040/3738" class="file">PDF</a> -->
+<br /><i>Pascal Denis, Philippe Muller</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3396">Learning from Natural Instructions</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3396/3739" class="file">PDF</a> -->
+<br /><i>Dan Goldwasser, Dan Roth</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3167">Automatic Discovery of Fuzzy Synsets from Dictionary Definitions</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3167/3742" class="file">PDF</a> -->
+<br /><i>Hugo Gon&ccedil;alo Oliveira, Paulo Gomes</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3357">Unsupervised Modeling of Dialog Acts in Asynchronous Conversations</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3357/3759" class="file">PDF</a> -->
+<br /><i>Shafiq Rayhan Joty, Giuseppe Carenini, Chin-Yew Lin</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2987">Improve Tree Kernel-Based Event Pronoun Resolution with Competitive Information</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2987/3741" class="file">PDF</a> -->
+<br /><i>Fang Kong, Guodong Zhou</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3096">Incorporating Reviewer and Product Information for Review Rating Prediction</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3096/3747" class="file">PDF</a> -->
+<br /><i>Fangtao Li, Nathan Nan Liu, Hongwei Jin, Kai Zhao, Qiang Yang, Xiaoyan Zhu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3131">Semi-Supervised Learning for Imbalanced Sentiment Classification</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3131/3744" class="file">PDF</a> -->
+<br /><i>Shoushan Li, Zhongqing Wang, Guodong Zhou, Sophia Yat Mei Lee</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2770">Collective Semantic Role Labeling for Tweets with Clustering</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2770/3748" class="file">PDF</a> -->
+<br /><i>Xiaohua Liu, Kuan Li, Ming Zhou, Zhongyang Xiong</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3035">SMT Versus AI Redux: How Semantic Frames Evaluate MT More Accurately</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3035/3745" class="file">PDF</a> -->
+<br /><i>Chi-kiu Lo, Dekai Wu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3343">Constraint Optimization Approach to Context Based Word Selection</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3343/3746" class="file">PDF</a> -->
+<br /><i>Jun Matsuno, Toru Ishida</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3001">An Approach to Answer Selection in Question-Answering Based on Semantic Relations</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3001/3749" class="file">PDF</a> -->
+<br /><i>Ana Cristina Mendes, Lu&iacute;sa Coheur</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3316">Learning for Deep Language Understanding</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3316/3750" class="file">PDF</a> -->
+<br /><i>Smaranda Muresan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3010">Improving Topic Evaluation Using Conceptual Knowledge</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3010/3754" class="file">PDF</a> -->
+<br /><i>Claudiu Cristian Musat, Julien Velcin, Stefan Trausan-Matu, Marian-Andrei Rizoiu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3345">A Graph-Based Algorithm for Inducing Lexical Taxonomies from Scratch</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3345/3751" class="file">PDF</a> -->
+<br /><i>Roberto Navigli, Paola Velardi, Stefano Faralli</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3049">Sample Efficient On-Line Learning of Optimal Dialogue Policies with Kalman Temporal Differences</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3049/3752" class="file">PDF</a> -->
+<br /><i>Olivier Pietquin, Matthieu Geist, Senthilkumar Chandramohan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3403">Ensemble-Based Coreference Resolution</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3403/3753" class="file">PDF</a> -->
+<br /><i>Altaf Rahman, Vincent Ng</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3066">Unsupervised Lexicon Acquisition for HPSG-Based Relation Extraction</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3066/3740" class="file">PDF</a> -->
+<br /><i>Benjamin Rozenfeld, Ronen Feldman</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3298">Interfacing Virtual Agents With Collaborative Knowledge: Open Domain Question Answering Using Wikipedia-Based Topic Models</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3298/3755" class="file">PDF</a> -->
+<br /><i>Ulli Waltinger, Alexa Breuing, Ipke Wachsmuth</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3111">Affect Sensing in Metaphorical Phenomena and Dramatic Interaction Context</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3111/3756" class="file">PDF</a> -->
+<br /><i>Li Zhang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3392">Entity Linking with Effective Acronym Expansion,  Instance Selection and Topic Modeling</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3392/3760" class="file">PDF</a> -->
+<br /><i>Wei Zhang, Yan-Chuan Sim, Jian Su, Chew-Lim Tan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2996">Learning Inter-Related Statistical Query Translation Models for English-Chinese Bi-Directional CLIR</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2996/3757" class="file">PDF</a> -->
+<br /><i>Yuejie Zhang, Lei Cen, Cheng Jin, Xiangyang Xue, Jianping Fan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3241">Fusion of Multiple Features and Supervised Learning for Chinese OOV Term Detection and POS Guessing</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3241/3758" class="file">PDF</a> -->
+<br /><i>Yuejie Zhang, Lei Cen, Wei Wu, Cheng Jin, Xiangyang Xue</i></p>
+
+<h4>Planning and Scheduling</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3359">DetH*: Approximate Hierarchical Solution of Large Markov Decision Processes</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3359/3782" class="file">PDF</a> -->
+<br /><i>Jennifer L. Barry, Leslie Pack Kaelbling, Tomas Lozano-Perez</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3117">Planning Under Partial Observability by Classical Replanning: Theory and Experiments</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3117/3784" class="file">PDF</a> -->
+<br /><i>Blai Bonet, Hector Geffner</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3122">Risk-Sensitive Policies for Sustainable Renewable Resource Allocation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3122/3783" class="file">PDF</a> -->
+<br /><i>Stefano Ermon, Jon Conrad, Carla Gomes, Bart Selman</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3302">Simple and Fast Strong Cyclic Planning for Fully-Observable Nondeterministic Planning Problems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3302/3785" class="file">PDF</a> -->
+<br /><i>Jicheng Fu, Vincent Ng, Farokh Bastani, I-Ling Yen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3194">On the Decidability of HTN Planning with Task Insertion</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3194/3786" class="file">PDF</a> -->
+<br /><i>Thomas Geier, Pascal Bercher</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3275">Transfer Learning for Activity Recognition via Sensor Mapping</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3275/3791" class="file">PDF</a> -->
+<br /><i>Derek Hao Hu, Qiang Yang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3279">Point-Based Value Iteration for Constrained POMDPs</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3279/3787" class="file">PDF</a> -->
+<br /><i>Dongho Kim, Jaesong Lee, Kee-Eung Kim, Pascal Poupart</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3379">Monitoring the Execution of Partial-Order Plans via Regression</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3379/3792" class="file">PDF</a> -->
+<br /><i>Christian Muise, Sheila A. McIlraith, J. Christopher Beck</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3284">Computing Perfect Heuristics in Polynomial Time: On Bisimulation and Merge-and-Shrink Abstraction in Optimal Planning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3284/3788" class="file">PDF</a> -->
+<br /><i>Raz Nissim, Joerg Hoffmann, Malte Helmert</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3382">Iterative Flattening Search for the Flexible Job Shop Scheduling Problem</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3382/3789" class="file">PDF</a> -->
+<br /><i>Angelo Oddi, Riccardo Rasconi, Amedeo Cesta, Stephen F. Smith</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3062">Large Neighborhood Search and Adaptive Randomized Decompositions for Flexible Jobshop Scheduling</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3062/3790" class="file">PDF</a> -->
+<br /><i>Dario Pacino, Pascal Van Hentenryck</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3217">Computing Infinite Plans for LTL Goals Using a Classical Planner</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3217/3798" class="file">PDF</a> -->
+<br /><i>Fabio Patrizi, Nir Lipoveztky, Giuseppe De Giacomo, Hector Geffner</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3305">Goal Recognition over POMDPs: Inferring the Intention of a POMDP Agent</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3305/3793" class="file">PDF</a> -->
+<br /><i>Miquel Ram&iacute;rez, Hector Geffner</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3413">Planning with SAT,  Admissible Heuristics and A*</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3413/3794" class="file">PDF</a> -->
+<br /><i>Jussi Rintanen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2904">Replanning in Domains with Partial Information and Sensing Actions</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2904/3795" class="file">PDF</a> -->
+<br /><i>Guy Shani, Ronen Brafman</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3196">Scaling Up Optimal Heuristic Search in Dec-POMDPs via Incremental Expansion</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3196/3799" class="file">PDF</a> -->
+<br /><i>Matthijs T. J. Spaan, Frans A. Oliehoek, Christopher Amato</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3404">On the Effectiveness of CNF and DNF Representations in Contingent Planning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3404/3796" class="file">PDF</a> -->
+<br /><i>Son Thanh To, Enrico Pontelli, Tran Cao Son</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3351">Bounded Intention Planning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3351/3800" class="file">PDF</a> -->
+<br /><i>Jason Wolfe, Stuart Russell</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2961">Probabilistic Goal Markov Decision Processes</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2961/3797" class="file">PDF</a> -->
+<br /><i>Huan Xu, Shie Mannor</i></p>
+
+<h4>Robotics and Vision</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2985">Capturing an Evader in a Polygonal Environment with Obstacles</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2985/3404" class="file">PDF</a> -->
+<br /><i>Deepak Bhadauria, Volkan Isler</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2895">Aesthetic Guideline Driven Photography by Robots</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2895/3403" class="file">PDF</a> -->
+<br /><i>Raghudeep Gadde, Kamalakar Karlapalem</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3336">Accommodating Human Variability in Human-Robot Teams through Theory of Mind</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3336/3405" class="file">PDF</a> -->
+<br /><i>Laura M. Hiatt, Anthony M. Harrison, J. Gregory Trafton</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2893">Robotic Object Detection: Learning to Improve the Classifiers using Sparse Graphs for Path Planning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2893/3401" class="file">PDF</a> -->
+<br /><i>Zhaoyin Jia, Ashutosh Saxena, Tsuhan Chen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2818">Conics With A Common Axis of Symmetry: Properties and Applications to Camera Calibration</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2818/3402" class="file">PDF</a> -->
+<br /><i>Zijian Zhao</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3045">User-Dependent Aspect Model for Collaborative Activity Recognition</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3045/3406" class="file">PDF</a> -->
+<br /><i>Vincent W. Zheng, Qiang Yang</i></p>
+
+<h4>Uncertainty in AI</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3052">Lifted Relational Kalman Filtering</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3052/3801" class="file">PDF</a> -->
+<br /><i>Jaesik Choi, Abner Guzman-Rivera, Eyal Amir</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3297">New Complexity Results for MAP in Bayesian Networks</a>
+<br /><i>Cassio Polpo de Campos</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3292">Inference with Multinomial Data: Why to Weaken the Prior Strength</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3292/3802" class="file">PDF</a> -->
+<br /><i>Cassio Polpo de Campos, Alessio Benavoli</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3300">Motor Simulation via Coupled Internal Models Using Sequential Monte Carlo</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3300/3803" class="file">PDF</a> -->
+<br /><i>Haris Dindo, Daniele Zambuto, Giovanni Pezzulo</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3334">Resolute Choice in Sequential Decision Problems with Multiple Priors</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3334/3804" class="file">PDF</a> -->
+<br /><i>H&eacute;l&egrave;ne Fargier, Gildas Jeantet, Olivier Spanjaard</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3113">Pairwise Decomposition for Combinatorial Optimization in Graphical Models</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3113/3805" class="file">PDF</a> -->
+<br /><i>Aur&eacute;lie Favier, Simon de Givry, Andr&egrave;s Legarra, Thomas Schiex</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3342">Randomized Sensing in Adversarial Environments</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3342/3814" class="file">PDF</a> -->
+<br /><i>Andreas Krause, Alex Roper, Daniel Golovin</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3071">Scalable Multiagent Planning Using Probabilistic Inference</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3071/3806" class="file">PDF</a> -->
+<br /><i>Akshat Kumar, Shlomo Zilberstein, Marc Toussaint</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2935">A Trust Prediction Approach Capturing Agents' Dynamic Behavior</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2935/3812" class="file">PDF</a> -->
+<br /><i>Xin Liu, Anwitaman Datta</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3094">Log-Linear Description Logics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3094/3807" class="file">PDF</a> -->
+<br /><i>Mathias Niepert, Jan Noessner, Heiner Stuckenschmidt</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3315">Eliciting Additive Reward Functions for Markov Decision Processes</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3315/3808" class="file">PDF</a> -->
+<br /><i>Kevin Regan, Craig Boutilier</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3322">Robust Online Optimization of Reward-Uncertain MDPs</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3322/3813" class="file">PDF</a> -->
+<br /><i>Kevin Regan, Craig Boutilier</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2800">Finding (&alpha;, &thetasym;)-Solutions Via Sampled SCSPs</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2800/3809" class="file">PDF</a> -->
+<br /><i>Roberto Rossi, Brahim Hnich, S. Armagan Tarim, Steven Prestwich</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3262">Lifted Probabilistic Inference by First-Order Knowledge Compilation</a>
+<br /><i>Guy Van den Broeck, Nima Taghipour, Wannes Meert, Jesse Davis, Luc De Raedt</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3133">Learning Optimal Bayesian Networks Using A* Search</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3133/3810" class="file">PDF</a> -->
+<br /><i>Changhe Yuan, Brandon Malone, Xiaojian Wu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3246">Bayesian Chain Classifiers for Multidimensional Classification</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3246/3811" class="file">PDF</a> -->
+<br /><i>Julio Cesar Zaragoza, Enrique Sucar, Eduardo Morales, Concha Bielza, Pedro Larra&ntilde;aga</i></p>
+
+<h4>Web and Knowledge-Based Information Systems</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3272">CCR &mdash; A Content-Collaborative Reciprocal Recommender for Online Dating</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3272/3672" class="file">PDF</a> -->
+<br /><i>Joshua Akehurst, Irena Koprinska, Kalina Yacef, Luiz Pizzato, Judy Kay, Tomasz Rej</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2930">Relation Adaptation: Learning to Extract Novel Relations with Minimum Supervision</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2930/3673" class="file">PDF</a> -->
+<br /><i>Danushka Bollegala, Yutaka Matsuo, Mitsuru Ishizuka</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2937">Leveraging Unlabeled Data to Scale Blocking for Record Linkage</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2937/3679" class="file">PDF</a> -->
+<br /><i>Yunbo Cao, Zhiyuan Chen, Jiamin Zhu, Pei Yue, Chin-Yew Lin, Yong Yu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3073">A Convex Formulation of Modularity Maximization for Community Detection</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3073/3674" class="file">PDF</a> -->
+<br /><i>Yun Kwan Chan, Dit-Yan Yeung</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2940">What to Ask to an Incomplete Semantic Web Reasoner?</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2940/3677" class="file">PDF</a> -->
+<br /><i>Bernardo Cuenca Grau, Giorgos Stoilos</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3169">The Modular Structure of an Ontology: Atomic Decomposition</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3169/3675" class="file">PDF</a> -->
+<br /><i>Chiara Del Vescovo, Bijan Parsia, Uli Sattler, Thomas Schneider</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2884">Fast Algorithm for Affinity Propagation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2884/3676" class="file">PDF</a> -->
+<br /><i>Yasuhiro Fujiwara, Go Irie, Tomoe Kitahara</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3114">Mining the Web for the "Voice of the Herd" to Track Stock Market Bubbles</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3114/3678" class="file">PDF</a> -->
+<br /><i>Aaron Gerow, Mark T Keane</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3344">Relevance Feedback between Web Search and the Semantic Web</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3344/3685" class="file">PDF</a> -->
+<br /><i>Harry R. Halpin, Victor Lavrenko</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3166">Finding the Hidden Gems: Recommending Untagged Music</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3166/3684" class="file">PDF</a> -->
+<br /><i>Ben Horsburgh, Susan Craw, Stewart Massie, Robin Boswell</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2887">Fashion Coordinates Recommender System Using Photographs from Fashion Magazines</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2887/3680" class="file">PDF</a> -->
+<br /><i>Tomoharu Iwata, Shinji Watanabe, Hiroshi Sawada</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3293">Mining Longitudinal Network for Predicting Company Value</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3293/3686" class="file">PDF</a> -->
+<br /><i>Yingzi Jin, Ching-Yung Lin, Yutaka Matsuo, Mitsuru Ishizuka</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3140">Context Sensitive Topic Models for Author Influence in Document Networks</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3140/3687" class="file">PDF</a> -->
+<br /><i>Saurabh Kataria, Prasenjit Mitra, Cornelia Caragea, C. Lee Giles</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2938">Multi-Perspective Linking of News Articles within a Repository</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2938/3690" class="file">PDF</a> -->
+<br /><i>Arpit Khurdiya, Lipika Dey, Nidhi Raj, Sk. Mirajul Haque</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3214">Social Abstract Argumentation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3214/3689" class="file">PDF</a>
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3214/4400" class="file">PDF</a> -->
+<br /><i>Jo&atilde;o Leite, Jo&atilde;o Martins</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2912">Cross-Domain Collaborative Filtering over Time</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2912/3688" class="file">PDF</a> -->
+<br /><i>Bin Li, Xingquan Zhu, Ruijiang Li, Chengqi Zhang, Xiangyang Xue, Xindong Wu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3195">Minimally Complete Recommendations</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3195/3691" class="file">PDF</a> -->
+<br /><i>David McSherry</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2932">User Similarity from Linked Taxonomies: Subjective Assessments of Items</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2932/3694" class="file">PDF</a> -->
+<br /><i>Makoto Nakatsuji, Yasuhiro Fujiwara, Toshio Uchiyama, Ko Fujimura</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3125">LIMES &mdash; A Time-Efficient Approach for Large-Scale Link Discovery on the Web of Data</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3125/3692" class="file">PDF</a> -->
+<br /><i>Axel-Cyrille Ngonga Ngomo, S&ouml;ren Auer</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2933">Transfer Learning to Predict Missing Ratings Via Heterogeneous User Feedbacks</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2933/3693" class="file">PDF</a> -->
+<br /><i>Weike Pan, Nathan N. Liu, Evan W. Xiang, Qiang Yang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3377">Making Better Informed Trust Decisions with Generalized Fact-Finding</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3377/3695" class="file">PDF</a> -->
+<br /><i>Jeff Pasternack, Dan Roth</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3023">Short Text Conceptualization Using a Probabilistic Knowledgebase</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3023/3701" class="file">PDF</a> -->
+<br /><i>Yangqiu Song, Haixun Wang, Zhongyuan Wang, Hongsong Li, Weizhu Chen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3332">A Wikipedia Based Semantic Graph Model for Topic Tracking in Blogosphere</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3332/3696" class="file">PDF</a> -->
+<br /><i>Jintao Tang, Ting Wang, Qin Lu, Ji Wang, Wenjie Li</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3145">Matching Large Ontologies Based on Reduction Anchors</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3145/3697" class="file">PDF</a> -->
+<br /><i>Peng Wang, Yuming Zhou, Baowen Xu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2966">Line Orthogonality in Adjacency Eigenspace with Application to Community Partition</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2966/3698" class="file">PDF</a> -->
+<br /><i>Leting Wu, Xiaowei Ying, Xintao Wu, Zhi-Hua Zhou</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3027">Source-Selection-Free Transfer Learning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3027/3700" class="file">PDF</a> -->
+<br /><i>Evan Wei Xiang, Sinno Jialin Pan, Weike Pan, Jian Su, Qiang Yang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3051">Predicting Epidemic Tendency through Search Behavior Analysis</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3051/3699" class="file">PDF</a> -->
+<br /><i>Danqing Xu, Yiqun Liu, Min Zhang, Shaoping Ma, Anqi Cui, Liyun Ru</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3203">Mining User Dwell Time for Personalized Web Search Re-Ranking</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3203/3702" class="file">PDF</a> -->
+<br /><i>Songhua Xu, Hao Jiang, Francis Chi-Moon Lau</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3354">Efficient Searching Top-k Semantic Similar Words</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3354/3704" class="file">PDF</a> -->
+<br /><i>Zhenglu Yang, Masaru Kitsuregawa</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3348">Recommender Systems from "Words of Few Mouths"</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3348/3703" class="file">PDF</a> -->
+<br /><i>Richong Zhang, Thomas Tran, Yongyi Mao</i></p>
+
+<h4>Special Track on Integrated and Embedded AI</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3200">Integrating Task Planning and Interactive Learning for Robots to Work in Human Environments</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3200/3705" class="file">PDF</a> -->
+<br /><i>Alejandro Gabriel Agostini, Carme Torras, Florentin W&ouml;rg&ouml;tter</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3033">Plan Recognition in Virtual Laboratories</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3033/3706" class="file">PDF</a> -->
+<br /><i>Ofra Amir, Ya&#039;akov (Kobi) Gal</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3044">A Comprehensive Approach to On-Board Autonomy Verification and Validation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3044/3711" class="file">PDF</a> -->
+<br /><i>Marco Bozzano, Alessandro Cimatti, Marco Roveri, Andrei Tchaltsev</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3411">Non-Linear Monte-Carlo Search in Civilization II</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3411/3710" class="file">PDF</a> -->
+<br /><i>S.R.K. Branavan, David Silver, Regina Barzilay</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2995">Buried Utility Pipeline Mapping Based on Multiple Spatial Data Sources: A Bayesian Data Fusion Approach</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2995/3717" class="file">PDF</a> -->
+<br /><i>Huanhuan Chen, Anthony G. Cohn</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3072">Enhancing Search Results with Semantic Annotation Using Augmented Browsing</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3072/3709" class="file">PDF</a> -->
+<br /><i>Hong-Jie Dai, Wei-Chi Tsai, Richard Tzong-Han Tsai, Wen-Lian Hsu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3339">Simulation-Based Data Mining Solution to the Structure of Water Surrounding Proteins</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3339/3712" class="file">PDF</a> -->
+<br /><i>Bao Tu Ho, Chi Hieu Dam, Ayumu Sugiyama</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3038">A Natural Language Question Answering System as a Participant in Human Q&amp;A Portals</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3038/3723" class="file">PDF</a> -->
+<br /><i>Tiansi Dong, Ulrich Furbach, Ingo Gl&ouml;ckner, Bj&ouml;rn Pelzer</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3082">Sketch Recognition Algorithms for Comparing Complex and Unpredictable Shapes</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3082/3713" class="file">PDF</a> -->
+<br /><i>Martin Field, Stephanie Valentine, Julie Linsey, Tracy Hammond</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3042">Exploiting Probabilistic Knowledge under Uncertain Sensing for Efficient Robot Behaviour</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3042/3714" class="file">PDF</a> -->
+<br /><i>Marc Hanheide, Charles Gretton, Richard W Dearden, Nick A Hawes, Jeremy L Wyatt, Andrzej Pronobis, Alper Aydemir, Moritz G&ouml;belbecker, Hendrik Zender</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3065">Integrated Learning for Goal-Driven Autonomy</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3065/3715" class="file">PDF</a> -->
+<br /><i>Ulit Jaidee, Hector Munoz-Avila, David W. Aha</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2811">Learning Compact Visual Descriptor for Low Bit Rate Mobile Landmark Search</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2811/3733" class="file">PDF</a> -->
+<br /><i>Rongrong Ji, Ling-Yu Duan, Jie Chen, Hongxun Yao, Tiejun Huang, Wen Gao</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3329">A New Search Engine Integrating Hierarchical Browsing and Keyword Search</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3329/3716" class="file">PDF</a> -->
+<br /><i>Da Kuang, Xiao Li, Charles X. Ling</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3321">Resource-Bounded Crowd-Sourcing of Commonsense Knowledge</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3321/3718" class="file">PDF</a> -->
+<br /><i>Yen-Ling Kuo, Jane Yung-jen Hsu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2975">A Real-Time Opponent Modeling System for Rush Football</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2975/3719" class="file">PDF</a> -->
+<br /><i>Kennard Laviers, Gita Sukthankar</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3276">Coordinating Logistics Operations with Privacy Guarantees</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3276/3720" class="file">PDF</a> -->
+<br /><i>Thomas L&eacute;aut&eacute;, Boi Faltings</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3097">Learning to Identify Review Spam</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3097/3721" class="file">PDF</a> -->
+<br /><i>Fangtao Huang Li, Minlie Huang, Yi Yang, Xiaoyan Zhu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3075">A System for Providing Differentiated QoS in Retail Banking</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3075/3722" class="file">PDF</a> -->
+<br /><i>Sameep Mehta, Girish Chafle, Gyana Parija, Vikas Kedia</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3254">Learning 3D Geological Structure from Drill-Rig Sensors for Automated Mining</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3254/3724" class="file">PDF</a> -->
+<br /><i>Sildomar Takahashi Monteiro, Joop van de Ven, Fabio Ramos, Peter Hatherly</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3154">Interest Prediction on Multinomial,  Time-Evolving Social Graph</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3154/3728" class="file">PDF</a> -->
+<br /><i>Nozomi Nori, Danushka Bollegala, Mitsuru Ishizuka</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3317">An Agent Architecture for Prognostic Reasoning Assistance</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3317/3725" class="file">PDF</a> -->
+<br /><i>Jean Oh, Felipe Meneguzzi, Katia Sycara, Timothy J Norman</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3161">Extending Computer Assisted Assessment Systems with Natural Language Processing,  User Modeling and Recommendations Based on Human Computer Interaction and Data Mining</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3161/3729" class="file">PDF</a> -->
+<br /><i>Ismael Pascual-Nieto, Olga C. Santos, Diana Perez-Marin, Jesus G. Boticario</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3390">Integrating Learning into a BDI Agent for Environments with Changing Dynamics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3390/3726" class="file">PDF</a> -->
+<br /><i>Dhirendra Singh, Sebastian Sardina, Lin Padgham, Geoff James</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3304">Embedding System Dynamics in Agent Based Models for Complex Adaptive Systems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3304/3730" class="file">PDF</a> -->
+<br /><i>Maarika Teose, Kiyan Ahmadizadeh, Eoin O&#039;Mahony, Rebecca L. Smith, Zhao Lu, Stephen P. Ellner, Carla Gomes, Yrjo Grohn</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2979">Kinship Verification Through Transfer Learning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2979/3727" class="file">PDF</a> -->
+<br /><i>Siyu Xia, Ming Shao, Yun Fu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2983">Cross-People Mobile-Phone Based Activity Recognition</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2983/3731" class="file">PDF</a> -->
+<br /><i>Zhongtang Zhao, Yiqiang Chen, Junfa Liu, Zhiqi Shen, Mingjie Liu</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3335">CHIME: An Efficient Error-Tolerant Chinese Pinyin Input Method</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3335/3732" class="file">PDF</a> -->
+<br /><i>Yabin Zheng, Chen Li, Maosong Sun</i></p>
+
+<h4>Best Paper Track</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2946">A Geometric View of Conjugate Priors</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2946/3635" class="file">PDF</a> -->
+<br /><i>Arvind Agarwal, Hal Daume III</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3225">Human-Guided Machine Learning for Fast and Accurate Network Alarm Triage</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3225/3636" class="file">PDF</a> -->
+<br /><i>Saleema Amershi, Bongshin Lee, Ashish Kapoor, Ratul Mahajan, Blaine Christian</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3100">Lower Bounds for Width-Restricted Clause Learning on Formulas of Small Width</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3100/3640" class="file">PDF</a> -->
+<br /><i>Eli Ben-Sasson, Jan Johannsen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3389">Community Detection in Social Networks Through Community Formation Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3389/3637" class="file">PDF</a> -->
+<br /><i>Wei Chen, Zhenming Liu, Xiaorui Sun, Yajun Wang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2997">An Algorithm for Adapting Cases Represented in ALC</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2997/3639" class="file">PDF</a> -->
+<br /><i>Julien Cojan, Jean Lieber</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2993">Exploring Protein Fragment Assembly Using CLP</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2993/3638" class="file">PDF</a> -->
+<br /><i>Alessandro Dal Pal&ugrave;, Agostino Dovier, Federico Fogolari, Enrico Pontelli</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2942">Translation-Based Constraint Answer Set Solving</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2942/3641" class="file">PDF</a> -->
+<br /><i>Christian Drescher, Toby Walsh</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2945">Incentive Engineering for Boolean Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2945/3642" class="file">PDF</a> -->
+<br /><i>Ulle Endriss, Sarit Kraus, Jerome Lang, Michael John Wooldridge</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3399">A Flat Histogram Method for Computing the Density of States of Combinatorial Problems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3399/3647" class="file">PDF</a> -->
+<br /><i>Stefano Ermon, Carla Gomes, Bart Selman</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3222">picoTrans: Using Pictures as Input for Machine Translation on Mobile Devices</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3222/3643" class="file">PDF</a> -->
+<br /><i>Andrew Finch, Wei Song, Kumiko Tanaka-Ishii, Eiichiro Sumita</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3281">Automatic Construction of Efficient Multiple Battery Usage Policies</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3281/3645" class="file">PDF</a> -->
+<br /><i>Maria Fox, Derek Long, Daniele Magazzeni</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3269">Finite Model Computation via Answer Set Programming</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3269/3644" class="file">PDF</a> -->
+<br /><i>Martin Gebser, Orkunt Sabuncu, Torsten Schaub</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3000">Measuring the Good and the Bad in Inconsistent Information</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3000/3646" class="file">PDF</a> -->
+<br /><i>John Grant, Anthony Hunter</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3005">A Correctness Result for Reasoning about One-Dimensional Planning Problems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3005/3648" class="file">PDF</a> -->
+<br /><i>Yuxiao Hu, Hector Levesque</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2973">A Transitivity Aware Matrix Factorization Model for Recommendation in Social Networks</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2973/3649" class="file">PDF</a> -->
+<br /><i>Mohsen Jamali, Martin Ester</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2914">Reinforcement Learning to Adjust Robot Movements to New Situations</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2914/3654" class="file">PDF</a> -->
+<br /><i>Jens Kober, Erhan Oztop, Jan Peters</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3184">The Combined Approach to Ontology-Based Data Access</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3184/3650" class="file">PDF</a> -->
+<br /><i>Roman Kontchakov, Carsten Lutz, David Toman, Frank Wolter, Michael Zakharyaschev</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3164">Reasoning and Proofing Services for Semantic Web Agents</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3164/3651" class="file">PDF</a> -->
+<br /><i>Kalliopi Kravari, Konstantinos Papatheodorou, Grigoris Antoniou, Nick Bassiliades</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2999">Efficient Rule-Based Inferencing for OWL EL</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2999/3669" class="file">PDF</a> -->
+<br /><i>Markus Kr&ouml;tzsch</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3215">Flexible Tree Matching</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3215/3652" class="file">PDF</a> -->
+<br /><i>Ranjitha Kumar, Jerry O. Talton, Salman Ahmad, Tim Roughgarden, Scott R. Klemmer</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3240">Enhancing Case Adaptation with Introspective Reasoning and Web Mining</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3240/3653" class="file">PDF</a> -->
+<br /><i>David Leake, Jay Powell</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3078">Recommender Systems: Missing Data and Statistical Model Estimation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3078/3657" class="file">PDF</a> -->
+<br /><i>Benjamin M. Marlin, Richard S. Zemel, Sam T. Roweis, Malcolm Slaney</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3331">Mind the Eigen-Gap,  or How to Accelerate Semi-Supervised Spectral Learning Algorithms</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3331/3655" class="file">PDF</a> -->
+<br /><i>Dimitrios Mavroeidis</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2980">Ties Matter: Complexity of Voting Manipulation Revisited</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2980/3656" class="file">PDF</a> -->
+<br /><i>Svetlana Obraztsova, Edith Elkind, Noam Hazon</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3063">An On-Line Algorithm for Semantic Forgetting</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3063/3658" class="file">PDF</a> -->
+<br /><i>Heather Stephanie Packer, Nicholas Gibbins, Nicholas R Jennings</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3015">GUARDS &mdash; Innovative Application of Game Theory for National Airport Security</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3015/3663" class="file">PDF</a> -->
+<br /><i>James Pita, Milind Tambe, Christopher Kiekintveld, Shane Cullen, Erin Steigerwald</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3378">Norm Compliance of Rule-Based Cognitive Agents</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3378/3659" class="file">PDF</a> -->
+<br /><i>Antonino Rotolo</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3327">Theoretical Justification of Popular Link Prediction Heuristics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3327/3664" class="file">PDF</a> -->
+<br /><i>Purnamrita Sarkar, Deepayan Chakrabarti, Andrew W. Moore</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2907">Evaluation of Group Profiling Strategies</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2907/3660" class="file">PDF</a> -->
+<br /><i>Christophe Senot, Dimitre Kostadinov, Makram Bouzid, J&eacute;r&ocirc;me Picault, Armen Aghasaryan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3008">Connecting the Dots Between News Articles</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3008/3661" class="file">PDF</a> -->
+<br /><i>Dafna Shahaf, Carlos Guestrin</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2901">Learning Linear and Kernel Predictors with the 0-1 Loss Function</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2901/3662" class="file">PDF</a> -->
+<br /><i>Shai Shalev-Shwartz, Ohad Shamir, Karthik Sridharan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3099">Adaptive Data Compression for Robot Perception</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3099/3671" class="file">PDF</a> -->
+<br /><i>Mike Smith, Ingmar Posner, Paul M Newman</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3237">Active Exploration for Robust Object Detection</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3237/3665" class="file">PDF</a> -->
+<br /><i>Javier Velez, Garrett Hemann, Albert S. Huang, Ingmar Posner, Nicholas Roy</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3172">A Framework for Longitudinal Influence Measurement between Communication Content and Social Networks</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3172/3670" class="file">PDF</a> -->
+<br /><i>Shenghui Wang, Paul Groth</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2926">Wsabie: Scaling Up to Large Vocabulary Image Annotation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2926/3666" class="file">PDF</a> -->
+<br /><i>Jason Weston, Samy Bengio, Nicolas Usunier</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3296">Analysis of Adjective-Noun Word Pair Extraction Methods for Online Review Summarization</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3296/3667" class="file">PDF</a> -->
+<br /><i>Koji Yatani, Michael Novati, Andrew Trusty, Khai Truong</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3226">Large Linear Classification When Data Cannot Fit in Memory</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3226/3668" class="file">PDF</a> -->
+<br /><i>Hsiang-Fu Yu, Cho-Jui Hsieh, Kai-Wei Chang, Chih-Jen Lin</i></p>
+
+<h4>Doctoral Consortium</h4>
+
+<p class="left">
+<a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3291">Solving the Multiagent Selection and Scheduling Problem</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3291/3592" class="file">PDF</a> -->
+<br /><i>James Calvin Boerkoel Jr.</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2918">Decision Support through Argumentation-Based Practical Reasoning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2918/3595" class="file">PDF</a> -->
+<br /><i>Federico Cerutti</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3137">Behaviour Recognition in Smart Homes</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3137/3593" class="file">PDF</a> -->
+<br /><i>Sook-Ling Chua, Stephen Marsland, Hans W. Guesgen</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3415">Statement of Thesis Research: Multi-Robot Sampling Strategies for Large-Scale Oceanographic Experiments</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3415/3594" class="file">PDF</a> -->
+<br /><i>Jnaneshwar Das</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3333">Control of Robotic Systems for Safe Interaction with Human Operators</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3333/3598" class="file">PDF</a> -->
+<br /><i>Hao Ding</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2833">Combining Machine Learning and Optimization Techniques to Determine 3-D Structures of Polypeptides</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2833/3597" class="file">PDF</a> -->
+<br /><i>Marcio Dorn, Luciana Salete Buriol, Luis da Cunha Lamb</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3148">An Agent-Oriented Software Engineering Methodology to Develop Adaptive Virtual Organizations</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3148/3596" class="file">PDF</a> -->
+<br /><i>Sergio Esparcia, Estefania Argente, Vicente Botti</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3367">Towards Social Problem-Solving with Human Subjects</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3367/3599" class="file">PDF</a> -->
+<br /><i>Daniel Scain Farenzena, Luis da Cunha Lamb, Ricardo Matsumura de Ara&uacute;jo</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3371">Towards Spatial Methods for Socially Assistive Robotics: Validation with Children with Autism Spectrum Disorders</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3371/3600" class="file">PDF</a> -->
+<br /><i>David Feil-Seifer</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2842">Regret Minimization in Multiplayer Extensive Games</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2842/3606" class="file">PDF</a> -->
+<br /><i>Richard Geoffrey Gibson, Duane Szafron</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2944">Combinatorial Aggregation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2944/3601" class="file">PDF</a> -->
+<br /><i>Umberto Grandi</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3369">Combining Spatial and Temporal Aspects of Prediction Problems to Improve Prediction Performance</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3369/3602" class="file">PDF</a> -->
+<br /><i>William Groves</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3003">A Decision-Theoretic Academic Advisor</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3003/3603" class="file">PDF</a> -->
+<br /><i>Joshua T. Guerin</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3060">Belief Revision on Computation Tree Logic</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3060/3604" class="file">PDF</a> -->
+<br /><i>Paulo T. Guerra, Renata Wassermann</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3182">Distributed Constraint Optimization Problems Related with Soft Arc Consistency</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3182/3607" class="file">PDF</a> -->
+<br /><i>Patricia Gutierrez, Pedro Meseguer</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3119">A Trust and Reputation Model for Supply Chain Mangement</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3119/3605" class="file">PDF</a> -->
+<br /><i>Yasaman Haghpanah</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3236">Graph Pruning and Symmetry Breaking On Grid Maps</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3236/3608" class="file">PDF</a> -->
+<br /><i>Daniel Damir Harabor</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2911">Towards Scalable MDP Algorithms</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2911/3611" class="file">PDF</a> -->
+<br /><i>Andrey Kolobov</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2891">Talking about Trust in Heterogeneous Multi-Agent Systems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2891/3609" class="file">PDF</a> -->
+<br /><i>Andrew Koster, Marco Schorlemmer, Jordi Sabater-Mir</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3068">An Analysis of Multiobjective Search Algorithms and Heuristics</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3068/3612" class="file">PDF</a> -->
+<br /><i>Enrique Machuca, Lawrence Mandow</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3064">On Temporal Regulations and Commitment Protocols</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3064/3610" class="file">PDF</a> -->
+<br /><i>Elisa Marengo, Matteo Baldoni, Cristina Baroglio</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2922">Contributions to Personalizable Knowledge Integration</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2922/3617" class="file">PDF</a> -->
+<br /><i>Maria Vanina Martinez</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2955">Decision Making Under Uncertainty: Social Choice and Manipulation</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2955/3613" class="file">PDF</a> -->
+<br /><i>Nicholas Scott Mattei</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3247">RDFKB: A Semantic Web Knowledge Base</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3247/3614" class="file">PDF</a> -->
+<br /><i>James P. McGlothlin, Latifur Khan, Bhavani Thuraisingham</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3006">Research Proposal: Cooperation among Self Interested Agents</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3006/3615" class="file">PDF</a> -->
+<br /><i>Reshef Meir</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2952">Temporal Defeasible Argumentation in Multi-Agent Planning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2952/3616" class="file">PDF</a> -->
+<br /><i>Sergio Pajares Ferrando, Eva Onaindia</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2963">Human Behavior Analysis from Video Data Using Bag-of-Gestures</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2963/3618" class="file">PDF</a> -->
+<br /><i>V&iacute;ctor Ponce L&oacute;pez, Mario Gorga L&oacute;pez, Xavier Bar&oacute; Sol&eacute;, Sergio Escalera Guerrero</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3106">Multi-Agent Coordination: DCOPs and Beyond</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3106/3619" class="file">PDF</a> -->
+<br /><i>Marc Pujol-Gonzalez</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3055">Bayesian Abductive Logic Programs: A Probabilistic Logic for Abductive Reasoning</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3055/3620" class="file">PDF</a> -->
+<br /><i>Sindhu V. Raghavan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2919">From an Agent Logic to an Agent Programming Language for Partially Observable Stochastic Domains</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2919/3623" class="file">PDF</a> -->
+<br /><i>Gavin Brian Rens</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2889">Agent-Based Negotiation Teams</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2889/3621" class="file">PDF</a> -->
+<br /><i>Victor Sanchez-Anguix, Vicente Julian, Ana Garcia-Fornes</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3124">A Method for Evaluating and Standardizing Ontologies</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3124/3622" class="file">PDF</a> -->
+<br /><i>Ali Patrice Seyed</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3039">Towards a Model-Centric Cognitive Architecture for Service Robots</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3039/3624" class="file">PDF</a> -->
+<br /><i>Andreas Steck</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2925">Sensorimotor Models of Space and Object Geometry</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2925/3625" class="file">PDF</a> -->
+<br /><i>Jeremy Stober</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3330">Multiagent Hierarchical Learning from Demonstration</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3330/3626" class="file">PDF</a> -->
+<br /><i>Keith Sullivan</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2941">Heuristic Search Under Quality and Time Bounds</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/2941/3630" class="file">PDF</a> -->
+<br /><i>Jordan Tyler Thayer</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3402">On the Impact of Belief State Representation in Planning Under Uncertainty</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3402/3627" class="file">PDF</a> -->
+<br /><i>Son Thanh To</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3290">Autonomous Object Manipulation: A Semantic-Driven Approach</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3290/3628" class="file">PDF</a> -->
+<br /><i>Nicola Vitucci</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3319">Tractable Massively Multi-Agent Pathfinding with Solution Quality and Completeness Guarantees</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3319/3632" class="file">PDF</a> -->
+<br /><i>Ko-Hsin Cindy Wang</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3009">Input Parameter Calibration in Forest Fire Spread Prediction: Taking the Intelligent Way</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3009/3629" class="file">PDF</a> -->
+<br /><i>Kerstin Wendt, Ana Cort&eacute;s</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3417">Transfer Learning in Spatial Reasoning Puzzles</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3417/3634" class="file">PDF</a> -->
+<br /><i>Baylor Wetzel</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3007">Trust Mechanisms for Online Systems</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3007/3631" class="file">PDF</a> -->
+<br /><i>Jens Witkowski</i></p>
+
+<p class="left"><a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3408">Mechanism Design for Dynamic Environments: Online Double Auctions</a>
+<!-- <a href="http://www.aaai.org/ocs/index.php/IJCAI/IJCAI11/paper/view/3408/3633" class="file">PDF</a> -->
+<br /><i>Dengji Zhao</i></p>
+</div>
+</div>
+</div>
+
+<div id="left">
+<div id="box4">
+<h2 class="backgrnd5"><span class="text1">AAAI Digital Library</span></h2>
+<div class="content">
+<div class="hr1">
+<hr />
+</div>
+<p><b><i>AAAI relies on your generous support through <a href="https://aaai.memberclicks.net/" rel="nofollow">membership</a> and <a href="https://www.aaai.org/Forms/donate.php">donations.</a> If you find these resources useful, we would be grateful for your <a href="https://www.aaai.org/Forms/donate.php">support.</a></i></b></p>
+<div class="hr1">
+<hr />
+</div>
+<h3 class="text2"><a href="http://www.aaai.org/Library/Magazine/magazine-library.php" title="AI Magazine abstracts with links to full text">AI Magazine Articles</a></h3>
+<h3 class="text2"><a href="http://www.aaai.org/Library/conferences-library.php" title="AI conference abstracts with links to full text">Conference Proceedings Papers</a></h3>
+<h3 class="text2"><a href="http://www.aaai.org/Library/Funding/funding-library.php" title="Tutorial on obtaining funding in AI">Funding Tutorial</a></h3>
+<h3 class="text2"><a href="http://www.aaai.org/Library/President/president.php" title="AAAI presidential addresses published in AI Magazine">Presidential Addresses</a></h3>
+<h3 class="text2"><a href="http://www.aaai.org/Library/Reports/reports-library.php" title="AI science policy reports">Policy Reports</a></h3>
+<h3 class="text2"><a href="http://www.aaai.org/Library/Symposia/symposia-library.php" title="AI symposium abstracts with links to full text">Symposia Papers</a></h3>
+<h3 class="text2"><a href="http://www.aaai.org/Library/Workshops/workshops-library.php" title="AI workshop papers with links to full text">Workshop Papers</a></h3>
+</div>
+
+<h4 class="backgrnd5"><span class="text1">Other Links</span></h4>
+<div class="content">
+<h3 class="text2"><a href="http://www.aaai.org/home.php" title="AAAI Home Page">AAAI Home Page</a></h3> 
+<h3 class="text2"><a href="http://www.aaai.org/Awards/awards.php" title="Fellows and Awards Pages">Awards</a></h3> 
+<h3 class="text2"><a href="http://www.aaai.org/Magazine/calendar.php" title="International Calendar of AI Events">Calendar</a></h3> 
+<h3 class="text2"><a href="http://www.aaai.org/Magazine/job-bank.php" title="Jobs for AI Scientists">Jobs</a></h3> 
+<h3 class="text2"><a href="http://www.aaai.org/Meetings/meetings.php" title="AAAI Sponsored and Affiliated Conferences, Workshops, and Symposia">Meetings</a></h3> 
+<h3 class="text2"><a href="http://www.aaai.org/Press/press.php" title="AI books, proceedings, and technical reports">AAAI Press</a></h3> 
+<h3 class="text2"><a href="http://www.aaai.org/Resources/resources.php" title="Links to Outside AI Pages">Resources</a></h3> 
+<h3 class="text2"><a href="http://www.aaai.org/Workshops/workshops.php" title="Information about AAAI sponsored workshops">AAAI Workshops</a></h3>
+</div>
+</div>
+</div>
+<div style="clear: both;">
+</div>
+</div>
+
+
+
+
+<div id="footer" class="backgrnd11">
+<p class="text3">This site is protected by copyright and trademark laws under US and International law. All rights reserved. <a href="http://www.aaai.org/Organization/copyright.php">Copyright</a> &copy; 1995&ndash;2014 Association for the Advancement of Artificial Intelligence.<br />Your use of this site is subject to our <a href="http://www.aaai.org/Organization/terms.php">Terms and Conditions</a> and <a href="http://www.aaai.org/Organization/privacy.php">Privacy Policy</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/home.php" title="AAAI Home Page">Home</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Organization/organization.php" title="Information about AAAI, Inc., including bylaws, officers, and staff">About AAAI</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Organization/search.php" title="Search the AAAI Web Site">Search</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/scripts/Contact/contact.php" title="Send a Message to AAAI">Contact&nbsp;AAAI</a><br />
+<a href="http://www.aaai.org/Conferences/conferences.php" title="AAAI, IAAI, and AIIDE conferences">AAAI Conferences</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Magazine/magazine.php" title="AI Magazine home page">AI Magazine</a>&nbsp;|&nbsp;<a href="http://aitopics.org" title="Information about AI (geared especially for students) and AI in the news" rel="nofollow">AITopics</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Awards/awards.php" title="Fellows and Awards Pages">Awards</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Magazine/calendar.php" title="International Calendar of AI Events">Calendar</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Library/library.php" title="Abstracts, with links to full text (for members), of AI papers in the AAAI digital library">Digital Library</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Magazine/job-bank.php" title="Jobs for AI Scientists">Jobs</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Meetings/meetings.php" title="AAAI Sponsored and Affiliated Conferences, Workshops, and Symposia">Meetings</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Membership/membership.php" title="AAAI Membership Materials">Membership</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Press/press.php" title="AI books, proceedings, and technical reports">Press</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Pressroom/pressroom.php" title="News Releases and Information for Journalists">Press Room</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Publications/publications.php" title="Information for Authors and Links to AI Publications">Publications</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Resources/resources.php" title="Links to Outside AI Pages">Resources</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Symposia/symposia.php" title="Information about AAAI's spring and fall symposia">Symposia</a>&nbsp;|&nbsp;<a href="http://www.aaai.org/Workshops/workshops.php" title="Information about AAAI sponsored workshops,">Workshops</a></p>
+</div>
+<table width="135" border="0" cellpadding="2" cellspacing="0" title="Click to Verify - This site chose Symantec SSL for secure e-commerce and confidential communications.">
+<tr>
+<td width="135" align="center" valign="top"><script type="text/javascript" src="https://seal.verisign.com/getseal?host_name=www.aaai.org&amp;size=XS&amp;use_flash=NO&amp;use_transparent=NO&amp;lang=en"></script><br />
+<a href="http://www.symantec.com/verisign/ssl-certificates" target="_blank"  style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">ABOUT SSL CERTIFICATES</a></td>
+</tr>
+</table>
+</body>
+</html>
+
