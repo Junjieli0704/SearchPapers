@@ -153,7 +153,8 @@ def search_papers(search_word='sentiment',year='2016',con = 'ACL',out_search_fil
                                                     out_search_paper_info_file = out_search_file)
     search_paper_for_top_con.load_data_base_file()
     search_paper_for_top_con.search_paper()
-    search_paper_for_top_con.print_out_all_search_paper_info()
+    return str(len(search_paper_for_top_con.res_paper_info_list))
+    #search_paper_for_top_con.print_out_all_search_paper_info()
 
 
 if __name__ == '__main__':
