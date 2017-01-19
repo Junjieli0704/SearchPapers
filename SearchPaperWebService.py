@@ -5,6 +5,9 @@ urls =(
 )
 
 class SearchPapers:
+    def __init__(self):
+        print 'eeee'
+
     def GET(self):
         i = web.input(con = 'ACL',year = '2015',key = 'sentiment', outfile = 'out.txt')
         web.header("Content-Type","text/html; charset=utf-8")
