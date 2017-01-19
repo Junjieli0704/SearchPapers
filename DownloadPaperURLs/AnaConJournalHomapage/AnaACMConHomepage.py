@@ -1,7 +1,7 @@
 
 #coding=utf-8
 import bs4
-import dataInfo
+import LoadDatInfo
 import httplib
 
 '''
@@ -30,7 +30,7 @@ def get_begin_end_list(tr_bs_list):
     return paper_begin_bs_list,paper_end_bs_list
 
 def get_paper_info(begin_place,tr_bs_list):
-    temp_paper_info_dict = dataInfo.get_paper_info_dict()
+    temp_paper_info_dict = LoadDatInfo.get_paper_info_dict()
 
     for con_num in range(0,5):
         tr_bs = tr_bs_list[con_num + begin_place]
@@ -87,5 +87,4 @@ def get_paper_info_list_from_con_year(con_home_file,con_name_year,all_paper_info
                 temp_paper_info_dict['publish_con'] = con_name
                 temp_paper_info_dict['publish_year'] = year
                 temp_paper_info_dict['paper_id'] = '__' + str(len(all_paper_info_list) + 1) + '__'
-                #temp_paper_info_dict['download_url'] = get_download_redict_url(temp_paper_info_dict['download_url'])
                 all_paper_info_list.append(temp_paper_info_dict)

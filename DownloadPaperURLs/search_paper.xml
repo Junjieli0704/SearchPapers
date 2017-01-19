@@ -1,0 +1,66 @@
+<PAPERS>
+  <PAPER>
+    <publish_con>ACL</publish_con>
+    <title>Sentiment Domain Adaptation with Multiple Sources</title>
+    <download_url>http://aclweb.org/anthology/P/P16/P16-1029.pdf</download_url>
+    <author_list>Fangzhao Wu_Yongfeng Huang</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__16972__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>ACL</publish_con>
+    <title>Document-level Sentiment Inference with Social, Faction, and Discourse Context</title>
+    <download_url>http://aclweb.org/anthology/P/P16/P16-1032.pdf</download_url>
+    <author_list>Eunsol Choi_Hannah Rashkin_Luke Zettlemoyer_Yejin Choi</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__16975__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>ACL</publish_con>
+    <title>AraSenTi: Large-Scale Twitter-Specific Arabic Sentiment Lexicons</title>
+    <download_url>http://aclweb.org/anthology/P/P16/P16-1066.pdf</download_url>
+    <author_list>Nora Al-Twairesh_Hend Al-Khalifa_Abdulmalik AlSalman</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__17009__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>ACL</publish_con>
+    <title>Modeling Social Norms Evolution for Personalized Sentiment Classification</title>
+    <download_url>http://aclweb.org/anthology/P/P16/P16-1081.pdf</download_url>
+    <author_list>Lin Gong_Mohammad Al Boni_Hongning Wang</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__17024__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>ACL</publish_con>
+    <title>Cross-Lingual Sentiment Classification with Bilingual Document Representation Learning</title>
+    <download_url>http://aclweb.org/anthology/P/P16/P16-1133.pdf</download_url>
+    <author_list>Xinjie Zhou_Xiaojun Wan_Jianguo Xiao</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__17076__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>ACL</publish_con>
+    <title>Evaluating Sentiment Analysis in the Context of Securities Trading</title>
+    <download_url>http://aclweb.org/anthology/P/P16/P16-1197.pdf</download_url>
+    <author_list>Siavash Kazemian_Shunan Zhao_Gerald Penn</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__17140__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>ACL</publish_con>
+    <title>Don't Count, Predict! An Automatic Approach to Learning Sentiment Lexicons for Short Text</title>
+    <download_url>http://aclweb.org/anthology/P/P16/P16-2036.pdf</download_url>
+    <author_list>Duy Tin Vo_Yue Zhang</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__17210__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>ACL</publish_con>
+    <title>Dimensional Sentiment Analysis Using a Regional CNN-LSTM Model</title>
+    <download_url>http://aclweb.org/anthology/P/P16/P16-2037.pdf</download_url>
+    <author_list>Jin Wang_Liang-Chih Yu_K. Robert Lai_Xuejie Zhang</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__17211__</paper_id>
+  </PAPER>
+</PAPERS>

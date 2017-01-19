@@ -1,8 +1,9 @@
 
 #coding=utf-8
 import bs4
-import dataInfo
-import xmlTest
+import LoadDatInfo
+import sys
+import xmlAPI
 '''
     Author: Junjie Li
     Analyze ICML and JMLR homepage
@@ -33,7 +34,7 @@ def get_paper_info_list_from_con_year(homepage_url,con_home_file,con_name_year,a
         authors_bs = paper_bs.find('span',{'class':'authors'})
         link_bs = paper_bs.find('p',{'class':'links'})
         if title_bs != None and authors_bs != None and link_bs != None:
-            paper_info_dict = dataInfo.get_paper_info_dict()
+            paper_info_dict = LoadDatInfo.get_paper_info_dict()
             paper_info_dict['publish_year'] = year
             paper_info_dict['publish_con'] = con_name
             paper_info_dict['author_list'] = get_author_list(authors_bs)
@@ -44,9 +45,9 @@ def get_paper_info_list_from_con_year(homepage_url,con_home_file,con_name_year,a
             all_paper_info_list.append(paper_info_dict)
 
 if __name__ == '__main__':
-    con_home_file = './Homepage/ICML_2015.html'
+    con_home_file = '../Data/Homepage/ICML_2015.html'
     con_name_year = 'ICML_2015'
     #con_to_homepage_dict['ICML_2015'] = 'http://jmlr.org/proceedings/papers/v37/'
     all_list = []
     get_paper_info_list_from_con_year('http://jmlr.org/proceedings/papers/v37/',con_home_file,con_name_year,all_list)
-    xmlTest.print_out_paper_info(all_list,'ttt.xml')
+    xmlAPI.print_out_paper_info(all_list,'ttt.xml')

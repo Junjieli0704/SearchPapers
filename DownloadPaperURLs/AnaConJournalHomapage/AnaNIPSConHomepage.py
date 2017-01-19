@@ -1,8 +1,10 @@
 
 #coding=utf-8
 import bs4
-import dataInfo
-import xmlTest
+import sys
+import LoadDatInfo
+import xmlAPI
+
 '''
     Author: Junjie Li
     Analyze NIPS homepage
@@ -33,7 +35,7 @@ def get_paper_info_list_from_con_year(con_home_file,con_name_year,all_paper_info
     page_content_bs = bs4.BeautifulSoup(url_con)
     paper_bs_list = page_content_bs.findAll('li')
     for paper_bs in paper_bs_list:
-        paper_info_dict = dataInfo.get_paper_info_dict()
+        paper_info_dict = LoadDatInfo.get_paper_info_dict()
         paper_info_dict['publish_year'] = year
         paper_info_dict['publish_con'] = con_name
         paper_info_dict['author_list'] = get_author_list(paper_bs)
@@ -43,9 +45,8 @@ def get_paper_info_list_from_con_year(con_home_file,con_name_year,all_paper_info
 
 
 if __name__ == '__main__':
-    con_home_file = './Homepage/NIPS_2015.html'
+    con_home_file = '../Data/Homepage/NIPS_2015.html'
     con_name_year = 'NIPS_2015'
-    #con_to_homepage_dict['ICML_2015'] = 'http://jmlr.org/proceedings/papers/v37/'
     all_list = []
     get_paper_info_list_from_con_year(con_home_file,con_name_year,all_list)
-    xmlTest.print_out_paper_info(all_list,'ttt.xml')
+    xmlAPI.print_out_paper_info(all_list,'ttt.xml')

@@ -1,8 +1,10 @@
 
 #coding=utf-8
 import bs4
-import dataInfo
-import xmlTest
+import LoadDatInfo
+import sys
+import xmlAPI
+
 '''
     Author: Junjie Li
     Analyze IEEE conference homepage
@@ -35,11 +37,10 @@ def get_paper_info_list_from_con_year(con_home_file,con_name_year,all_paper_info
                 author_list = author_str.split(', ')
                 title_str =  p_bs.find('a').text
                 href_str = ''
-                #print str(p_bs)
                 for temp_str in str(p_bs).split('</a>'):
                     if temp_str.find('PDF') != -1:
                         href_str = temp_str.split('"')[1].replace('view','download')
-                paper_info_dict = dataInfo.get_paper_info_dict()
+                paper_info_dict = LoadDatInfo.get_paper_info_dict()
                 paper_info_dict['publish_year'] = year
                 paper_info_dict['publish_con'] = con_name
                 paper_info_dict['author_list'] = author_list
@@ -50,8 +51,8 @@ def get_paper_info_list_from_con_year(con_home_file,con_name_year,all_paper_info
                     all_paper_info_list.append(paper_info_dict)
 
 if __name__ == '__main__':
-    con_home_file = './Homepage/IJCAI_2015.html'
+    con_home_file = '../Data/Homepage/IJCAI_2015.html'
     con_name_year = 'IJCAI_2015'
     all_list = []
     get_paper_info_list_from_con_year(con_home_file,con_name_year,all_list)
-    xmlTest.print_out_paper_info(all_list,'ttt.xml')
+    xmlAPI.print_out_paper_info(all_list,'ttt.xml')

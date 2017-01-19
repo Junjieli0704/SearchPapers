@@ -1,8 +1,9 @@
 
 #coding=utf-8
 import bs4
-import dataInfo
-import xmlTest
+import LoadDatInfo
+import sys
+import xmlAPI
 '''
     Author: Junjie Li
     Analyze ACL conference and journal homepage
@@ -32,7 +33,7 @@ def get_paper_info_list_from_con_year(homepage_url,con_home_file,con_name_year,a
     p_bs_list = page_content_bs.findAll('p')
     for p_bs in p_bs_list:
         if p_bs.find('a') != None and  p_bs.find('b') != None and  p_bs.find('i') != None:
-            paper_info_dict = dataInfo.get_paper_info_dict()
+            paper_info_dict = LoadDatInfo.get_paper_info_dict()
             temp_href = p_bs.find('a')['href']
             paper_info_dict['publish_year'] = year
             paper_info_dict['publish_con'] = con_name
@@ -47,8 +48,8 @@ def get_paper_info_list_from_con_year(homepage_url,con_home_file,con_name_year,a
                 all_paper_info_list.append(paper_info_dict)
 
 if __name__ == '__main__':
-    con_home_file = './Homepage/NAACL_2016.html'
+    con_home_file = '../Data/Homepage/NAACL_2016.html'
     con_name_year = 'NAACL_2016'
     all_list = []
     get_paper_info_list_from_con_year('',con_home_file,con_name_year,all_list)
-    xmlTest.print_out_paper_info(all_list,'ttt.xml')
+    xmlAPI.print_out_paper_info(all_list,'ttt.xml')
