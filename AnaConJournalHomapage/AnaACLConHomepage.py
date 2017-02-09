@@ -4,13 +4,13 @@ import bs4
 import LoadDatInfo
 import sys
 import xmlAPI
-'''
-    Author: Junjie Li
-    Analyze ACL conference and journal homepage
-    Input: an ACL conference homepage
-    Output: all paper info in the page
-    2016/04/07
-'''
+# -------------------------------------------------------------------- #
+#    Author: Junjie Li
+#    Analyze ACL conference and journal homepage
+#    Input: an ACL conference homepage
+#    Output: all paper info in the page
+#    2016/04/07
+# -------------------------------------------------------------------- #
 
 def detect_href(href_file,con_name):
     href_file = href_file.replace('.','-')

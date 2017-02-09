@@ -11,7 +11,7 @@ from AnaConJournalHomapage import xmlAPI,usefulAPI
 #   ACM  conferences: WWW, CIKM, SIGKDD, SIGIR, WSDM
 #   ACL  conferences: ACL, EMNLP, NAACL, COLING,
 #   ACL  Journals:    TACL, CL
-# 添加时间： 2017-04-06
+# 添加时间： 2016-04-06
 # Revise Time: 2017-01-19
 # -------------------------------------------------------------------- #
 
