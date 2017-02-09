@@ -236,22 +236,29 @@ def load_search_para():
                  help='Input the search words, our system is case-insensitive and '
                       'uses "_" (means and) or "/" (means or) to split two or more '
                       'search words (e.g. sentiment_analysis), ALLPAPER is used to '
-                      'get all papers from the specical conference and year',
-                 default='',type = 'string')
+                      'get all papers from the specical conference and year.'
+                      'Default Value (sentiment)',
+                 default='sentiment',type = 'string')
     p.add_option('-y','--year',dest='year',
-                 help='Input the search year, from begin year(2011) to(_) end year(2015) or just one year(2012). (e.g. 2011_2013, 2012)',
-                 default='',type = 'string')
+                 help='Input the search year, from begin year(2011) to(_) end year(2015) or just one year(2012). (e.g. 2011_2013, 2012) Default Value (2015)',
+                 default='2015',type = 'string')
     p.add_option('-c','--con',dest='con',
                  help='Input conferences or journals to search. The conferences contain: ACL, EMNLP, COLING, NAACL, IJCAI, AAAI, KDD, '
                       'SIGIR, WWW, WSDM, CIKM, NIPS, ICML. The journals contain: JMLR, CL, TACL. (e.g. ACL_EMNLP). '
-                      '"AllCon" means all the conferences and journals'
-                 ,default='',type = 'string')
+                      '"AllCon" means all the conferences and journals. Default Value (ACL)'
+                 ,default='ACL',type = 'string')
     p.add_option('-o','--outfilefold',dest='outfilefold',
-                 help='Input the filefold to record pdf files (e.g. ./Sent/)'
+                 help='Input the filefold to record pdf files (e.g. ./Sent/) Default Value(./OutFileFold/)'
                  ,default='./OutFileFold/',type = 'string')
     options, args = p.parse_args()
-    if options.search_word == '' or options.year == '' or options.con == '':
-        p.print_help()
+    if options.search_word == '':
+        print "Error: seachch_word can't be empty string"
+        sys.exit(0)
+    elif options.year == '':
+        print "Error: year can't be empty string"
+        sys.exit(0)
+    elif options.con == '':
+        print "Error: con can't be empty string"
         sys.exit(0)
     if detect_con_year_para(options.year) == False:
         print 'Error input for parameter year, please input again......'
@@ -271,12 +278,6 @@ def set_search_dict(search_word,year,con,outfilefold):
     return search_dict
 
 if __name__ == '__main__':
-
-    search_word = 'sentiment'
-    year = '2016'
-    con = 'ACL'
-    out_file_fold = './ACL/'
-
     con_to_homepage_dict,con_to_org_dict = LoadDatInfo.load_con_to_homepage_org_dict()
     search_dat_dict = load_search_para()
     #search_dat_dict = set_search_dict(search_word=search_word,year=year,con = con,
