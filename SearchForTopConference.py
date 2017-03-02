@@ -280,8 +280,8 @@ def set_search_dict(search_word,year,con,outfilefold):
 if __name__ == '__main__':
     con_to_homepage_dict,con_to_org_dict = LoadDatInfo.load_con_to_homepage_org_dict()
     search_dat_dict = load_search_para()
-    #search_dat_dict = set_search_dict(search_word=search_word,year=year,con = con,
-    #                                  outfilefold=out_file_fold)
+    #search_dat_dict = set_search_dict(search_word='aspect',year='2015_2016',con = 'AllCon',
+    #                                  outfilefold='./Test/')
     search_paper_for_top_con = searchPaperForTopCon(search_dat_dict,con_to_org_dict,'./Data/dat_base.xml')
     search_paper_for_top_con.load_data_base_file()
     search_paper_for_top_con.search_paper()

@@ -1,66 +1,290 @@
 <PAPERS>
   <PAPER>
-    <publish_con>ACL</publish_con>
-    <title>Sentiment Domain Adaptation with Multiple Sources</title>
-    <download_url>http://aclweb.org/anthology/P/P16/P16-1029.pdf</download_url>
-    <author_list>Fangzhao Wu_Yongfeng Huang</author_list>
+    <publish_con>NAACL</publish_con>
+    <title>Clustering for Simultaneous Extraction of Aspects and Features from Reviews</title>
+    <download_url>http://aclweb.org/anthology/N/N16/N16-1093.pdf</download_url>
+    <author_list>Lu Chen_Justin Martineau_Doreen Cheng_Amit Sheth</author_list>
     <publish_year>2016</publish_year>
-    <paper_id>__16972__</paper_id>
+    <paper_id>__2375__</paper_id>
   </PAPER>
   <PAPER>
-    <publish_con>ACL</publish_con>
-    <title>Document-level Sentiment Inference with Social, Faction, and Discourse Context</title>
-    <download_url>http://aclweb.org/anthology/P/P16/P16-1032.pdf</download_url>
-    <author_list>Eunsol Choi_Hannah Rashkin_Luke Zettlemoyer_Yejin Choi</author_list>
-    <publish_year>2016</publish_year>
-    <paper_id>__16975__</paper_id>
+    <publish_con>EMNLP</publish_con>
+    <title>Automatic recognition of habituals: a three-way classification of clausal aspect</title>
+    <download_url>http://aclweb.org/anthology/D/D15/D15-1294.pdf</download_url>
+    <author_list>Annemarie Friedrich_Manfred Pinkal</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__3362__</paper_id>
   </PAPER>
   <PAPER>
-    <publish_con>ACL</publish_con>
-    <title>AraSenTi: Large-Scale Twitter-Specific Arabic Sentiment Lexicons</title>
-    <download_url>http://aclweb.org/anthology/P/P16/P16-1066.pdf</download_url>
-    <author_list>Nora Al-Twairesh_Hend Al-Khalifa_Abdulmalik AlSalman</author_list>
-    <publish_year>2016</publish_year>
-    <paper_id>__17009__</paper_id>
+    <publish_con>EMNLP</publish_con>
+    <title>PhraseRNN: Phrase Recursive Neural Network for Aspect-based Sentiment Analysis</title>
+    <download_url>http://aclweb.org/anthology/D/D15/D15-1298.pdf</download_url>
+    <author_list>Thien Hai Nguyen_Kiyoaki Shirai</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__3366__</paper_id>
   </PAPER>
   <PAPER>
-    <publish_con>ACL</publish_con>
-    <title>Modeling Social Norms Evolution for Personalized Sentiment Classification</title>
-    <download_url>http://aclweb.org/anthology/P/P16/P16-1081.pdf</download_url>
-    <author_list>Lin Gong_Mohammad Al Boni_Hongning Wang</author_list>
-    <publish_year>2016</publish_year>
-    <paper_id>__17024__</paper_id>
+    <publish_con>EMNLP</publish_con>
+    <title>A Multi-lingual Annotated Dataset for Aspect-Oriented Opinion Mining</title>
+    <download_url>http://aclweb.org/anthology/D/D15/D15-1302.pdf</download_url>
+    <author_list>Salud M. Jiménez-Zafra_Giacomo Berardi_Andrea Esuli_Diego Marcheggiani_María Teresa Martín-Valdivia_Alejandro Moreo Fernández</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__3370__</paper_id>
   </PAPER>
   <PAPER>
-    <publish_con>ACL</publish_con>
-    <title>Cross-Lingual Sentiment Classification with Bilingual Document Representation Learning</title>
-    <download_url>http://aclweb.org/anthology/P/P16/P16-1133.pdf</download_url>
+    <publish_con>EMNLP</publish_con>
+    <title>Aspect Level Sentiment Classification with Deep Memory Network</title>
+    <download_url>http://aclweb.org/anthology/D/D16/D16-1021.pdf</download_url>
+    <author_list>Duyu Tang_Bing Qin_Ting Liu</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__3401__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>EMNLP</publish_con>
+    <title>Lifelong-RL: Lifelong Relaxation Labeling for Separating Entities and Aspects in Opinion Targets</title>
+    <download_url>http://aclweb.org/anthology/D/D16/D16-1022.pdf</download_url>
+    <author_list>Lei Shu_Bing Liu_Hu Xu_Annice Kim</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__3402__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>EMNLP</publish_con>
+    <title>Attention-based LSTM for Aspect-level Sentiment Classification</title>
+    <download_url>http://aclweb.org/anthology/D/D16/D16-1058.pdf</download_url>
+    <author_list>Yequan Wang_Minlie Huang_xiaoyan zhu_Li Zhao</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__3438__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>EMNLP</publish_con>
+    <title>Recursive Neural Conditional Random Fields for Aspect-based Sentiment Analysis</title>
+    <download_url>http://aclweb.org/anthology/D/D16/D16-1059.pdf</download_url>
+    <author_list>Wenya Wang_Sinno Jialin Pan_Daniel Dahlmeier_Xiaokui Xiao</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__3439__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>EMNLP</publish_con>
+    <title>Extracting Aspect Specific Opinion Expressions</title>
+    <download_url>http://aclweb.org/anthology/D/D16/D16-1060.pdf</download_url>
+    <author_list>Abhishek Laddha_Arjun Mukherjee</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__3440__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>EMNLP</publish_con>
+    <title>A Hierarchical Model of Reviews for Aspect-based Sentiment Analysis</title>
+    <download_url>http://aclweb.org/anthology/D/D16/D16-1103.pdf</download_url>
+    <author_list>Sebastian Ruder_Parsa Ghaffari_John G. Breslin</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__3483__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>SIGIR</publish_con>
+    <title>Jointly Modeling Review Content and Aspect Ratings for Review Rating Prediction</title>
+    <download_url>http://dl.acm.org/ft_gateway.cfm?id=2914692&amp;ftid=1754162&amp;dwn=1&amp;CFID=906419216&amp;CFTOKEN=22282322</download_url>
+    <author_list>Zhipeng Jin_Qiudan Li_Daniel D. Zeng_YongCheng Zhan_Ruoran Liu_Lei Wang_Hongyuan Ma</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__4762__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>SIGIR</publish_con>
+    <title>Mining, Ranking and Recommending Entity Aspects</title>
+    <download_url>http://dl.acm.org/ft_gateway.cfm?id=2767724&amp;ftid=1610232&amp;dwn=1&amp;CFID=759850335&amp;CFTOKEN=69485017</download_url>
+    <author_list>Ridho Reinanda_Edgar Meij_Maarten de Rijke</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__5054__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>SIGIR</publish_con>
+    <title>An Aspect-driven Social Media Explorer</title>
+    <download_url>http://dl.acm.org/ft_gateway.cfm?id=2767864&amp;ftid=1610392&amp;dwn=1&amp;CFID=759850335&amp;CFTOKEN=69485017</download_url>
+    <author_list>Nedim Lipka_W. Bruce Croft</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__5182__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>WWW</publish_con>
+    <title>Mining Aspect-Specific Opinion using a Holistic Lifelong Topic Model</title>
+    <download_url>http://dl.acm.org/ft_gateway.cfm?id=2883086&amp;ftid=1707572&amp;dwn=1&amp;CFID=664144369&amp;CFTOKEN=14004798</download_url>
+    <author_list>Shuai Wang_Zhiyuan Chen_Bing Liu</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__5978__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>COLING</publish_con>
+    <title>SentiHood: Targeted Aspect Based Sentiment Analysis Dataset for Urban Neighbourhoods</title>
+    <download_url>http://aclweb.org/anthology/C/C16/C16-1146.pdf</download_url>
+    <author_list>Marzieh Saeidi_Guillaume Bouchard_Maria Liakata_Sebastian Riedel</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__7402__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>COLING</publish_con>
+    <title>Exploring Distributional Representations and Machine Translation for Aspect-based Cross-lingual Sentiment Classification.</title>
+    <download_url>http://aclweb.org/anthology/C/C16/C16-1152.pdf</download_url>
+    <author_list>Jeremy Barnes_Patrik Lambert_Toni Badia</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__7408__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>COLING</publish_con>
+    <title>Structured Aspect Extraction</title>
+    <download_url>http://aclweb.org/anthology/C/C16/C16-1219.pdf</download_url>
+    <author_list>Omer Gunes_Tim Furche_Giorgio Orsi</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__7475__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>COLING</publish_con>
+    <title>Distance Metric Learning for Aspect Phrase Grouping</title>
+    <download_url>http://aclweb.org/anthology/C/C16/C16-1235.pdf</download_url>
+    <author_list>Shufeng Xiong_Yue Zhang_Donghong JI_Yinxia Lou</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__7491__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>COLING</publish_con>
+    <title>Measuring the Effect of Conversational Aspects on Machine Translation Quality</title>
+    <download_url>http://aclweb.org/anthology/C/C16/C16-1242.pdf</download_url>
+    <author_list>Marlies van der Wees_Arianna Bisazza_Christof Monz</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__7498__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>COLING</publish_con>
+    <title>Aspect Based Sentiment Analysis using Sentiment Flow with Local and Non-local Neighbor Information</title>
+    <download_url>http://aclweb.org/anthology/C/C16/C16-1248.pdf</download_url>
+    <author_list>Shubham Pateria</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__7504__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>CIKM</publish_con>
+    <title>PEQ: An Explainable, Specification-based, Aspect-oriented Product Comparator for E-commerce</title>
+    <download_url>http://dl.acm.org/ft_gateway.cfm?id=2983901&amp;ftid=1806477&amp;dwn=1&amp;CFID=906419319&amp;CFTOKEN=22796859</download_url>
+    <author_list>Abhishek Sikchi_Pawan Goyal_Samik Datta</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__8136__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>CIKM</publish_con>
+    <title>Iterative Search using Query Aspects</title>
+    <download_url>http://dl.acm.org/ft_gateway.cfm?id=2983903&amp;ftid=1806445&amp;dwn=1&amp;CFID=906419319&amp;CFTOKEN=22796859</download_url>
+    <author_list>Manmeet Singh_W. Bruce Croft</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__8138__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>CIKM</publish_con>
+    <title>Entity and Aspect Extraction for Organizing News Comments</title>
+    <download_url>http://dl.acm.org/ft_gateway.cfm?id=2806576&amp;ftid=1632255&amp;dwn=1&amp;CFID=759848890&amp;CFTOKEN=36415023</download_url>
+    <author_list>Radityo Eko Prasojo_Mouna Kacimi_Werner Nutt</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__8258__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>CIKM</publish_con>
+    <title>Sentiment Extraction by Leveraging Aspect-Opinion Association Structure</title>
+    <download_url>http://dl.acm.org/ft_gateway.cfm?id=2806525&amp;ftid=1632241&amp;dwn=1&amp;CFID=759848890&amp;CFTOKEN=36415023</download_url>
+    <author_list>Li Zhao_Minlie Huang_Jiashen Sun_Hengliang Luo_Xiankai Yang_Xiaoyan Zhu</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__8269__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>CIKM</publish_con>
+    <title>Practical Aspects of Sensitivity in Online Experimentation with User Engagement Metrics</title>
+    <download_url>http://dl.acm.org/ft_gateway.cfm?id=2806496&amp;ftid=1632341&amp;dwn=1&amp;CFID=759848890&amp;CFTOKEN=36415023</download_url>
+    <author_list>Alexey Drutsa_Anna Ufliand_Gleb Gusev</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__8311__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>CIKM</publish_con>
+    <title>TriRank: Review-aware Explainable Recommendation by Modeling Aspects</title>
+    <download_url>http://dl.acm.org/ft_gateway.cfm?id=2806504&amp;ftid=1632412&amp;dwn=1&amp;CFID=759848890&amp;CFTOKEN=36415023</download_url>
+    <author_list>Xiangnan He_Tao Chen_Min-Yen Kan_Xiao Chen</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__8401__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>CIKM</publish_con>
+    <title>ASEM: Mining Aspects and Sentiment of Events from Microblog</title>
+    <download_url>http://dl.acm.org/ft_gateway.cfm?id=2806622&amp;ftid=1632386&amp;dwn=1&amp;CFID=759848890&amp;CFTOKEN=36415023</download_url>
+    <author_list>Ruhui Wang_Weijing Huang_Wei Chen_Tengjiao Wang_Kai Lei</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__8465__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>IJCAI</publish_con>
+    <title>Automated Rule Selection for Aspect Extraction in Opinion Mining</title>
+    <download_url>http://www.aaai.org/ocs/index.php/IJCAI/IJCAI15/paper/download/10766/10842</download_url>
+    <author_list>Qian Liu_Zhiqiang Gao_Bing Liu_Yuanlin Zhang</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__10281__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>AAAI</publish_con>
+    <title>Improving Opinion Aspect Extraction Using Semantic Similarity and Aspect Associations</title>
+    <download_url>http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/download/11973/12051</download_url>
+    <author_list>Qian Liu_Bing Liu_Yuanlin Zhang_Doo Soon Kim_Zhiqiang Gao</author_list>
+    <publish_year>2016</publish_year>
+    <paper_id>__11166__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>AAAI</publish_con>
+    <title>Representation Learning for Aspect Category Detection in Online Reviews</title>
+    <download_url>http://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/download/9764/9275</download_url>
     <author_list>Xinjie Zhou_Xiaojun Wan_Jianguo Xiao</author_list>
-    <publish_year>2016</publish_year>
-    <paper_id>__17076__</paper_id>
+    <publish_year>2015</publish_year>
+    <paper_id>__11501__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>WSDM</publish_con>
+    <title>FLAME: A Probabilistic Model Combining Aspect Based Opinion Mining and Collaborative Filtering</title>
+    <download_url>http://dl.acm.org/ft_gateway.cfm?id=2685291&amp;ftid=1538056&amp;dwn=1&amp;CFID=591118813&amp;CFTOKEN=16690508</download_url>
+    <author_list>Yao Wu_Martin Ester</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__17580__</paper_id>
   </PAPER>
   <PAPER>
     <publish_con>ACL</publish_con>
-    <title>Evaluating Sentiment Analysis in the Context of Securities Trading</title>
-    <download_url>http://aclweb.org/anthology/P/P16/P16-1197.pdf</download_url>
-    <author_list>Siavash Kazemian_Shunan Zhao_Gerald Penn</author_list>
+    <title>Situation entity types: automatic classification of clause-level aspect</title>
+    <download_url>http://aclweb.org/anthology/P/P16/P16-1166.pdf</download_url>
+    <author_list>Annemarie Friedrich_Alexis Palmer_Manfred Pinkal</author_list>
     <publish_year>2016</publish_year>
-    <paper_id>__17140__</paper_id>
+    <paper_id>__18182__</paper_id>
   </PAPER>
   <PAPER>
     <publish_con>ACL</publish_con>
-    <title>Don't Count, Predict! An Automatic Approach to Learning Sentiment Lexicons for Short Text</title>
-    <download_url>http://aclweb.org/anthology/P/P16/P16-2036.pdf</download_url>
-    <author_list>Duy Tin Vo_Yue Zhang</author_list>
+    <title>Implicit Polarity and Implicit Aspect Recognition in Opinion Mining</title>
+    <download_url>http://aclweb.org/anthology/P/P16/P16-2004.pdf</download_url>
+    <author_list>Huan-Yuan Chen_Hsin-Hsi Chen</author_list>
     <publish_year>2016</publish_year>
-    <paper_id>__17210__</paper_id>
+    <paper_id>__18251__</paper_id>
   </PAPER>
   <PAPER>
     <publish_con>ACL</publish_con>
-    <title>Dimensional Sentiment Analysis Using a Regional CNN-LSTM Model</title>
-    <download_url>http://aclweb.org/anthology/P/P16/P16-2037.pdf</download_url>
-    <author_list>Jin Wang_Liang-Chih Yu_K. Robert Lai_Xuejie Zhang</author_list>
-    <publish_year>2016</publish_year>
-    <paper_id>__17211__</paper_id>
+    <title>Weakly Supervised Models of Aspect-Sentiment for Online Course Discussion Forums</title>
+    <download_url>http://aclweb.org/anthology/P/P15/P15-1008.pdf</download_url>
+    <author_list>Arti Ramesh_Shachi H. Kumar_James Foulds_Lise Getoor</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__18638__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>ACL</publish_con>
+    <title>Sentiment-Aspect Extraction based on Restricted Boltzmann Machines</title>
+    <download_url>http://aclweb.org/anthology/P/P15/P15-1060.pdf</download_url>
+    <author_list>Linlin Wang_Kang Liu_Zhu Cao_Jun Zhao_Gerard de Melo</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__18690__</paper_id>
+  </PAPER>
+  <PAPER>
+    <publish_con>ACL</publish_con>
+    <title>Aspect-Level Cross-lingual Sentiment Classification with Constrained SMT</title>
+    <download_url>http://aclweb.org/anthology/P/P15/P15-2128.pdf</download_url>
+    <author_list>Patrik Lambert</author_list>
+    <publish_year>2015</publish_year>
+    <paper_id>__18932__</paper_id>
   </PAPER>
 </PAPERS>
